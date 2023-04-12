@@ -1,0 +1,61 @@
+:root {
+    --main-bg-colour: #171918;
+    --main-txt-colour: #f7f1e7;
+    --navbar-bg-colour: #454864;
+    --alt-bg-colour: #f7f1e7;
+    --alt-txt-colour: #171918;
+}
+
+body {
+    font-family: 'Noto Serif', 'KaiTi', '楷体', 'Noto Serif TC', serif;
+    background-color: var(--main-bg-colour);
+    color: var(--main-txt-colour);
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-colour);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--main-txt-colour);
+}
+
+a {
+    color: var(--main-txt-colour);
+}
+
+#btn-back-to-top {
+    background-color: var(--navbar-bg-colour);
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    border-radius: 50%;
+    display: none;
+    border: 0px;
+  }
+
+#text-box {
+    background-color: var(--alt-bg-colour);
+    color: var(--alt-txt-colour);
+    border: 5px;
+    padding: 0.4rem;
+}
+
+#text-box a {
+    background-color: var(--alt-bg-colour);
+    color: var(--alt-txt-colour);
+}
+
+#text-indent {
+    text-indent: 32px;
+}
+
+div.vertical-panel {
+    writing-mode: vertical-rl;
+}
