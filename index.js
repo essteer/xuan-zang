@@ -21,10 +21,25 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-// Xuanzang sections
-app.get("/:subroute", (req, res) => {
+// Main section routes
+app.get("/ink", (req, res) => {
+  res.render("ink/ink");
+});
+app.get("/voice", (req, res) => {
+  res.render("voice/voice");
+});
+app.get("/sources", (req, res) => {
+  res.render("sources/sources");
+});
+app.get("/about", (req, res) => {
+  res.render("about/about");
+});
+
+// Routes to article stubs
+app.get("/:subroute/:stub", (req, res) => {
   const subroute = req.params.subroute;
-  res.render(`${subroute}/${subroute}`);
+  const stub = req.params.stub;
+  res.render(`${subroute}/${stub}`);
 });
 
 // 404 error page route
