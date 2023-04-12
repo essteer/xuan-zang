@@ -21,6 +21,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+// Xuanzang sections
+app.get("/:subroute", (req, res) => {
+  const subroute = req.params.subroute;
+  res.render(`${subroute}/${subroute}`);
+});
+
 // 404 error page route
 app.use((req, res, next) => {
   res.status(404);
