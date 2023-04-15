@@ -1,7 +1,8 @@
 :root {
     --main-bg-colour: #171918;
     --main-txt-colour: #f7f1e7;
-    --navbar-bg-colour: #454864;
+    --navbar-bg-colour: #a0aecd;
+    /* --navbar-bg-colour: #454864; */
     --alt-bg-colour: #f7f1e7;
     --alt-txt-colour: #171918;
 }
@@ -22,9 +23,9 @@ body {
     background-color: var(--navbar-bg-colour);
 }
 
-.navbar-brand, .nav-link {
+/* .navbar-brand, .nav-link {
     color: var(--main-txt-colour);
-}
+} */
 
 a {
     color: var(--main-txt-colour);
