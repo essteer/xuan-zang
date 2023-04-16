@@ -19,8 +19,9 @@ body {
     max-width: 750px;
 }
 
-.navbar {
+.navbar, footer, footer a {
     background-color: var(--navbar-bg-colour);
+    color: var(--alt-txt-colour);
 }
 
 a {
@@ -55,4 +56,8 @@ a {
 
 div.vertical-panel {
     writing-mode: vertical-rl;
+}
+
+#footer-anchor {
+    text-decoration: none;
 }
