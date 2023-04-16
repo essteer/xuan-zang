@@ -23,10 +23,6 @@ body {
     background-color: var(--navbar-bg-colour);
 }
 
-/* .navbar-brand, .nav-link {
-    color: var(--main-txt-colour);
-} */
-
 a {
     color: var(--main-txt-colour);
 }
