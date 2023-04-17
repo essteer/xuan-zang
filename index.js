@@ -35,12 +35,6 @@ app.get("/about", (req, res) => {
   res.render("about/about");
 });
 
-// Routes to episode pages (Chiang Hsun content)
-app.get("/voice/episodes/:episode", (req, res) => {
-  const episode = req.params.episode;
-  res.render(`voice/episodes/${episode}`);
-});
-
 // Routes to article stubs
 app.get("/:subroute/:stub", (req, res) => {
   const subroute = req.params.subroute;
