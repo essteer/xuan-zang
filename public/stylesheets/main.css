@@ -24,6 +24,10 @@ a {
     color: var(--main-txt-colour);
 }
 
+#main-anchor {
+    text-decoration: none;
+}
+
 .navbar, footer, footer a {
     background-color: var(--navbar-bg-colour);
     color: var(--alt-txt-colour);
@@ -45,7 +49,22 @@ a {
     transition: all 0.4s ease-in-out 0s;
 }
 
-.navbar a:hover:before, footer a:hover:before {
+#main-anchor:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-txt-colour);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.navbar a:hover:before, footer a:hover:before, #main-anchor:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
