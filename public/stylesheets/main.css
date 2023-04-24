@@ -100,3 +100,12 @@ a {
 div.vertical-panel {
     writing-mode: vertical-rl;
 }
+
+#podcast {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#podcast img {
+    border-radius: 10%;
+}
