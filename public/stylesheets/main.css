@@ -102,10 +102,15 @@ div.vertical-panel {
 }
 
 #podcast {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 180px;
+    max-height: 180px;
 }
 
-#podcast img {
+#podcast-thumb {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+#podcast img, #podcast-thumb img {
     border-radius: 10%;
 }
