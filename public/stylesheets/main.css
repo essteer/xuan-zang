@@ -19,6 +19,10 @@ body {
     max-width: 750px;
 }
 
+.chinese-heading {
+    font-family: 'ZCOOL QingKe HuangYou';
+}
+
 a {
     position: relative;
     color: var(--main-txt-colour);
@@ -113,4 +117,11 @@ div.vertical-panel {
 
 #podcast img, #podcast-thumb img {
     border-radius: 10%;
+}
+
+#caption {
+    font-size: 0.75rem;
+    font-weight: 200;
+    width: 80%;
+    margin: 0 auto;
 }
