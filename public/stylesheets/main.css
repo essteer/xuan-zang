@@ -111,11 +111,21 @@ div.vertical-panel {
 }
 
 #podcast-thumb {
-    max-width: 130px;
-    max-height: 130px;
+    max-width: 140px;
+    max-height: 140px;
 }
 
-#podcast img, #podcast-thumb img {
+#app-thumb {
+    max-width: 85px;
+    max-height: 85px;
+}
+
+#app-thumb-wide {
+    max-width: 240px;
+    max-height: 85px;
+}
+
+#podcast img, #podcast-thumb img, #app-thumb img, #app-thumb-wide img {
     border-radius: 10%;
 }
 
