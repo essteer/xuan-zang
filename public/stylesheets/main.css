@@ -8,19 +8,31 @@
 }
 
 body {
-    font-family: 'Noto Serif', 'KaiTi', '楷体', 'Noto Serif TC', serif;
+    font-family: 'Source Serif Pro', 'KaiTi', '楷体', 'Noto Serif TC', serif;
     background-color: var(--main-bg-colour);
     color: var(--main-txt-colour);
     text-align: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 750px;
+.navbar, footer {
+    font-family: 'Oswald', sans-serif;
 }
+
+/* .navbar, footer, h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+} */
 
 .chinese-heading {
     font-family: 'ZCOOL QingKe HuangYou';
+}
+
+.chinese {
+    font-family: 'KaiTi', '楷体', 'Noto Serif TC', serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
 }
 
 a {
@@ -42,7 +54,7 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1.5px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: var(--alt-txt-colour);
@@ -57,7 +69,7 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1.5px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: var(--main-txt-colour);
