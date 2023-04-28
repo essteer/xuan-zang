@@ -14,20 +14,18 @@ body {
     text-align: center;
 }
 
-.navbar, footer {
+.navbar, footer, h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
 }
 
-/* .navbar, footer, h1, h2, h3 {
-    font-family: 'Oswald', sans-serif;
-} */
+h1, h2, h2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .chinese-heading {
     font-family: 'ZCOOL QingKe HuangYou';
-}
-
-.chinese {
-    font-family: 'KaiTi', '楷体', 'Noto Serif TC', serif;
 }
 
 .container {
@@ -54,7 +52,7 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 1.25px;
     bottom: 0;
     left: 0;
     background-color: var(--alt-txt-colour);
@@ -69,7 +67,7 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 1.25px;
     bottom: 0;
     left: 0;
     background-color: var(--main-txt-colour);
