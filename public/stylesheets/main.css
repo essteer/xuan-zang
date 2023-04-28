@@ -141,6 +141,7 @@ div.vertical-panel {
 }
 
 #caption {
+    font-family:'Oswald', sans-serif;
     font-size: 0.75rem;
     font-weight: 200;
     width: 80%;
