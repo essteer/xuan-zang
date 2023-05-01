@@ -99,7 +99,7 @@ a {
     background-color: var(--alt-bg-colour);
     color: var(--alt-txt-colour);
     border: 5px;
-    padding: 1rem;
+    padding: 1.25rem;
     border-radius: 10%;
 }
 
