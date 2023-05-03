@@ -16,6 +16,12 @@ https://web.archive.org/web/20160822161228/http://jessica-hjf.blog.163.com/blog/
 LEAP:
 http://leapleapleap.com/
 
+Yibao:
+https://yibaochina.com/
+
+Citizen Power Initiatives for China:
+https://www.citizenpowerforchina.org/
+
 Liu Dan bio:
 http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/
 
