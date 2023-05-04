@@ -179,6 +179,11 @@ div.vertical-panel {
     max-height: 180px;
 }
 
+#podcast-thumbs {
+    display: flex;
+    justify-content: center;
+}
+
 #podcast-thumb {
     max-width: 140px;
     max-height: 140px;
