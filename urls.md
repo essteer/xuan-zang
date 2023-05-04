@@ -16,6 +16,9 @@ https://web.archive.org/web/20160822161228/http://jessica-hjf.blog.163.com/blog/
 LEAP:
 http://leapleapleap.com/
 
+Sea Breeze Books:
+https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition
+
 Yibao:
 https://yibaochina.com/
 
@@ -26,6 +29,9 @@ Liu Dan bio:
 http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/
 
 ## VOICE
+
+JustPod:
+https://justpodmedia.com/
 
 Bumingbai podcast:
 https://www.bumingbai.net/
@@ -38,6 +44,9 @@ https://www.nytimes.com/2019/05/12/world/asia/china-podcast-gushi-fm.html
 
 Chiang Hsun's Mei De Chen Si podcast:
 https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b
+
+YiXi:
+https://www.yixi.tv
 
 ## SOURCES
 
