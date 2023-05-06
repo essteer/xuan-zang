@@ -3,7 +3,7 @@
     --main-bg-colour: #171918;
     --main-txt-colour: #f7f1e7;
     --navbar-bg-colour: #a0aecd;
-    --alt-bg-colour: #f7f1e7;
+    --alt-bg-colour: #edede9;
     --alt-txt-colour: #171918;
 }
 
@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-.navbar, footer, h1, h2, h3 {
+.navbar, footer, h1, h2, h3, #text-box, #caption {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -153,12 +153,16 @@ ul.list {
     transform: scaleX(1);
 }
 
-#text-box {
+#text-box, #caption {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+#text-box, #text-box-cn {
     background-color: var(--alt-bg-colour);
     color: var(--alt-txt-colour);
-    border: 5px;
-    padding: 1.25rem;
-    border-radius: 10%;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 #text-box a {
@@ -166,10 +170,20 @@ ul.list {
     color: var(--alt-txt-colour);
 }
 
+#caption, #text-box-cn {
+    max-height: 450px;
+    
+    @media screen and (min-width: 500px) {
+        width: 80%;
+        max-width: min(80%, 400px);
+        margin: 0 auto;
+      }
+}
+
+/* For Chinese text boxes */
 #text-indent {
     text-indent: 32px;
 }
-
 div.vertical-panel {
     writing-mode: vertical-rl;
 }
@@ -200,13 +214,5 @@ div.vertical-panel {
 }
 
 #podcast img, #podcast-thumb img, #app-thumb img, #app-thumb-wide img {
-    border-radius: 10%;
-}
-
-#caption {
-    font-family:'Oswald', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 200;
-    width: 80%;
-    margin: 0 auto;
+    border-radius: 7.5px;
 }
