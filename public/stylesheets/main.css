@@ -14,23 +14,27 @@ body {
     text-align: center;
 }
 
-.navbar, footer, h1, h2, h3, #text-box, #caption {
-    font-family: 'Oswald', sans-serif;
+.container {
+    width: 100%;
+    max-width: 750px;
 }
 
-h1, h2, h2 a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar, footer {
+    background-color: var(--navbar-bg-colour);
+    color: var(--alt-txt-colour);
+}
+
+.navbar, footer, h1, h2, h3, #text-box, #caption {
+    font-family: 'Oswald', sans-serif;
 }
 
 .chinese-heading {
     font-family: 'ZCOOL QingKe HuangYou';
 }
 
-.container {
-    width: 100%;
-    max-width: 750px;
+p {
+    text-align: start;
+    margin-top: 1rem;
 }
 
 a {
@@ -38,13 +42,21 @@ a {
     color: var(--main-txt-colour);
 }
 
-#main-anchor {
-    text-decoration: none;
+h1, .h2-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.25rem;
+    padding: 0.15rem 0;
 }
 
-.navbar, footer {
-    background-color: var(--navbar-bg-colour);
-    color: var(--alt-txt-colour);
+.h3-sources {
+    margin-top: 1rem;
+    text-align: start;
+}
+
+#main-anchor {
+    text-decoration: none;
 }
 
 .navbar a, footer a {
@@ -180,9 +192,14 @@ ul.list {
       }
 }
 
+#caption {
+    margin-top: 0.5rem;
+}
+
 /* For Chinese text boxes */
 #text-indent {
     text-indent: 32px;
+    margin: 0;
 }
 div.vertical-panel {
     writing-mode: vertical-rl;
@@ -191,28 +208,25 @@ div.vertical-panel {
 #podcast {
     max-width: 180px;
     max-height: 180px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
-
 #podcast-thumbs {
     display: flex;
     justify-content: center;
 }
-
 #podcast-thumb {
     max-width: 140px;
     max-height: 140px;
 }
-
 #app-thumb {
     max-width: 85px;
     max-height: 85px;
 }
-
 #app-thumb-wide {
     max-width: 180px;
     max-height: 85px;
 }
-
 #podcast img, #podcast-thumb img, #app-thumb img, #app-thumb-wide img {
     border-radius: 7.5px;
 }
