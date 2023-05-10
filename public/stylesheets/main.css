@@ -32,16 +32,7 @@ body {
     font-family: 'ZCOOL QingKe HuangYou';
 }
 
-p {
-    text-align: start;
-    margin-top: 1rem;
-}
-
-a {
-    position: relative;
-    color: var(--main-txt-colour);
-}
-
+/* Centre-align capitalised headings and characters */
 h1, .h2-link {
     display: flex;
     align-items: center;
@@ -53,6 +44,16 @@ h1, .h2-link {
 .h3-sources {
     margin-top: 1rem;
     text-align: start;
+}
+
+p {
+    text-align: start;
+    margin-top: 1rem;
+}
+
+a {
+    position: relative;
+    color: var(--main-txt-colour);
 }
 
 #main-anchor {
