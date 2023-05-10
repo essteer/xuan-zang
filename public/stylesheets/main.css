@@ -1,10 +1,10 @@
 :root {
     color-scheme: light only;
-    --main-bg-colour: #171918;
-    --main-txt-colour: #f7f1e7;
-    --navbar-bg-colour: #a0aecd;
-    --alt-bg-colour: #edede9;
-    --alt-txt-colour: #171918;
+    --main-bg-colour: lch(8% 1.25 165);
+    --main-txt-colour: lch(95% 5 82);
+    --navbar-bg-colour: lch(70% 18 270);
+    --alt-bg-colour: lch(90% 3 100);
+    --alt-txt-colour: lch(8% 1.25 165);
 }
 
 body {
