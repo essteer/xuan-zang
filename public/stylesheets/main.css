@@ -5,6 +5,11 @@
     --navbar-bg-colour: lch(70% 18 270);
     --alt-bg-colour: lch(90% 3 100);
     --alt-txt-colour: lch(8% 1.25 165);
+
+    --half-margin: 0.5rem;
+    --main-margin: 1rem;
+    --more-margin: 1.5rem;
+    --wide-margin: 3rem;
 }
 
 body {
@@ -41,14 +46,13 @@ h1, .h2-link {
     padding: 0.15rem 0;
 }
 
-.h3-sources {
-    margin-top: 1rem;
-    text-align: start;
+h1 {
+    margin-top: var(--main-margin);
 }
 
-p {
+p, .h3-sources, .index {
     text-align: start;
-    margin-top: 1rem;
+    margin-top: var(--main-margin);
 }
 
 a {
@@ -58,6 +62,10 @@ a {
 
 #main-anchor {
     text-decoration: none;
+}
+
+.return-link {
+    margin-top: var(--wide-margin);
 }
 
 .navbar a, footer a {
@@ -193,8 +201,8 @@ ul.list {
       }
 }
 
-#caption {
-    margin-top: 0.5rem;
+#caption, #image {
+    margin-top: var(--half-margin);
 }
 
 /* For Chinese text boxes */
@@ -207,10 +215,10 @@ div.vertical-panel {
 }
 
 #podcast {
-    max-width: 180px;
-    max-height: 180px;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    max-width: 160px;
+    max-height: 160px;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
 }
 #podcast-thumbs {
     display: flex;
