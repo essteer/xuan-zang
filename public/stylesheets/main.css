@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Source Serif Pro', 'KaiTi', '楷体', 'Noto Serif TC', serif;
+    font-family: 'Source Serif Pro', 'Noto Serif TC', serif;
     background-color: var(--main-bg-colour);
     color: var(--main-txt-colour);
     text-align: center;
