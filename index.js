@@ -42,13 +42,6 @@ app.get("/:subroute/:stub", (req, res) => {
   res.render(`${subroute}/pages/${stub}`);
 });
 
-// // Routes to article stubs
-// app.get("/:subroute/:stub", (req, res) => {
-//   const subroute = req.params.subroute;
-//   const stub = req.params.stub;
-//   res.render(`${subroute}/${stub}`);
-// });
-
 // 404 error page route
 app.use((req, res, next) => {
   res.status(404);
