@@ -60,7 +60,7 @@ a {
     color: var(--main-txt-colour);
 }
 
-#main-anchor {
+.main-anchor {
     text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ a {
     transition: all 0.4s ease-in-out 0s;
 }
 
-#main-anchor:before {
+.main-anchor:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -104,7 +104,7 @@ a {
     transition: all 0.4s ease-in-out 0s;
 }
 
-.navbar a:hover:before, footer a:hover:before, #main-anchor:hover:before {
+.navbar a:hover:before, footer a:hover:before, .main-anchor:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -214,17 +214,17 @@ div.vertical-panel {
     writing-mode: vertical-rl;
 }
 
-#podcast {
+.podcast {
     max-width: 160px;
     max-height: 160px;
     margin-top: var(--main-margin);
     margin-bottom: var(--main-margin);
 }
-#podcast-thumbs {
+.podcast-thumbs {
     display: flex;
     justify-content: center;
 }
-#podcast-thumb {
+.podcast-thumb {
     max-width: 140px;
     max-height: 140px;
 }
@@ -238,6 +238,6 @@ div.vertical-panel {
     max-height: 85px;
     margin-top: var(--wide-margin);
 }
-#podcast img, #podcast-thumb img, #app-thumb img, #app-thumb-wide img {
+.podcast img, .podcast-thumb img, #app-thumb img, #app-thumb-wide img {
     border-radius: 7.5px;
 }
