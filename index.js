@@ -18,6 +18,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Main index page
 app.get("/", (req, res) => {
+  // sameSite: "lax" improves navigation performance by permitting back/forward cache restoration
+  res.cookie("cookieName", "cookieValue", { sameSite: "lax", secure: true });
   res.render("index");
 });
 
