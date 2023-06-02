@@ -29,7 +29,7 @@ body {
     color: var(--alt-txt-colour);
 }
 
-.navbar, footer, h1, h2, h3, #text-box, #caption {
+.navbar, footer, h1, h2, h3, .text-box, .caption {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -174,24 +174,24 @@ ul.list {
     transform: scaleX(1);
 }
 
-#text-box, #caption {
+.text-box, .caption {
     font-size: 0.75rem;
     text-align: center;
 }
 
-#text-box, #text-box-cn {
+.text-box, .text-box-cn {
     background-color: var(--alt-bg-colour);
     color: var(--alt-txt-colour);
     padding: 0.5rem;
     border-radius: 5px;
 }
 
-#text-box a {
+.text-box a {
     background-color: var(--alt-bg-colour);
     color: var(--alt-txt-colour);
 }
 
-#caption, #text-box-cn {
+.caption, .text-box-cn {
     max-height: 450px;
     
     @media screen and (min-width: 500px) {
@@ -201,12 +201,12 @@ ul.list {
       }
 }
 
-#caption, #image {
+.caption, .image {
     margin-top: var(--half-margin);
 }
 
 /* For Chinese text boxes */
-#text-indent {
+.text-indent {
     text-indent: 32px;
     margin: 0;
 }
