@@ -18,8 +18,8 @@ Xuanzang uses Google Fonts for title text (Oswald: Latin script / ZCOOL QingKe H
 
 To optimise use of web fonts, practices have been adopted from [CSS Wizardy](https://csswizardry.com/2020/05/the-fastest-google-fonts/)'s additive method:
 
-- "&display=swap" at the end of the href link is now default with Google Fonts.
+- "&display=swap" at the end of the href link is now default with Google Fonts - this allows the system font to load if there is a delay in fetching the web font.
 - media="print" to fetch Google Fonts File asynchronously.
 - Preload the CSS file to make the asynchronous fetch high priority.
 - Preconnect fonts.gstatic.com, disabling the default fonts.googleapis.com preconnect.
-- a noscript fallback is also included for instances where JavaScript is disabled.
+- A noscript fallback is also included for instances where JavaScript is disabled.
