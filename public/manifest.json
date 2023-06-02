@@ -3,9 +3,10 @@
     "name": "Xuanzang: Chinese-language writers and podcasts",
     "icons": [
       {
-        "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685690110/xuanzang/xuanzang192_y4o7kg.png",
+        "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685692747/xuanzang/xuanzang192_maskable_vibrwj.png",
         "sizes": "192x192",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
         "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685690111/xuanzang/xuanzang512_shynyy.png",
