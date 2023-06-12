@@ -6,7 +6,6 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const ejsMate = require("ejs-mate");
-// Built-in module to access and interact with file system
 const fs = require("fs");
 
 app.engine("ejs", ejsMate);

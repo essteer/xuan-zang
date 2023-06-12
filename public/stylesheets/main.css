@@ -50,6 +50,11 @@ h1 {
     margin-top: var(--main-margin);
 }
 
+hr {
+    margin-top: var(--more-margin);
+    margin-bottom: var(--more-margin);
+}
+
 p, .h3-sources, .index {
     text-align: start;
     margin-top: var(--main-margin);
