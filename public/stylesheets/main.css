@@ -124,6 +124,8 @@ a {
     border-radius: 50%;
     display: none;
     border: 0px;
+    width: 35px;
+    height: 35px;
   }
 
 .container-columns {
