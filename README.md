@@ -1,4 +1,4 @@
-# <img src="XUANZANG.png" width="386" height="80">
+# <img src="xuanzang.png" width="386" height="80">
 
 ![GitHub deployments](https://img.shields.io/github/deployments/essteer/xuan-zang/Production) ![GitHub License](https://img.shields.io/github/license/essteer/xuan-zang?color=blue) ![GitHub last commit](https://img.shields.io/github/last-commit/essteer/xuan-zang?color=red) ![GitHub top language](https://img.shields.io/github/languages/top/essteer/xuan-zang?color=blue)
 
