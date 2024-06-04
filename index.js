@@ -9,7 +9,11 @@ const app = express();
 app.disable('x-powered-by');
 const path = require("path");
 const ejsMate = require("ejs-mate");
+// Built-in module to access and interact with file system
 const fs = require("fs");
+// Parse front matter from Markdown files
+const { marked } = require("marked");
+
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
@@ -17,6 +21,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 // Configure path to "public" directory
 app.use(express.static(path.join(__dirname, "public")));
+
 
 // Apply rate limiting to all requests
 const limiter = rateLimit({
@@ -26,6 +31,7 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 app.use(limiter);
+
 
 // Main index page
 app.get("/", (req, res) => {
@@ -47,6 +53,35 @@ app.get("/sources", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about/about");
 });
+
+
+// Markdown to HTML rendering for entire pages
+app.get("/:filename", (req, res) => {
+  const filename = req.params.filename;
+  const markdownPath = path.join(__dirname, "views", "misc", "pages", `${filename}.md`);
+  
+  fs.readFile(markdownPath, "utf8", (err, data) => {
+    if (err) {
+      res.send("File not found");
+    } else {
+      const htmlContent = marked(data);
+      res.render("misc/misc", { content: htmlContent });
+    }
+  });
+});
+// Create a route for each Markdown post
+// fs.readdir('./views/misc', (err, files) => {
+//   files.forEach(file => {
+//     const name = file.split('.')[0];
+//     const filePath = path.join(__dirname, "views", "misc", file);
+//     const fileContents = fs.readFileSync(filePath, 'utf8');
+//     const html = marked(fileContents);
+//     app.get(`/${name}`, (req, res) => {
+//       res.render('post', { title: name, content: html });
+//     });
+//   });
+// });
+
 
 // Routes to article stubs
 app.get("/:subroute/:stub", (req, res) => {
