@@ -27,7 +27,7 @@ Images used include artworks, photographs, official logos and so on. Attribution
 To run on a local machine for local development, navigate to the root directory and run:
 
 ```console
-node index.js
+$ node index.js
 ```
 
 The key tools used to develop this website are [Embedded JavaScript](https://ejs.co/), `HTML`, `CSS` and `Node`. The original version of the site made heavy use of the [Bootstrap 5](https://getbootstrap.com/) framework, but this has since been reduced to a minimum to exert more direct control on the site's aesthetic.
