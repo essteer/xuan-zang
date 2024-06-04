@@ -2,7 +2,6 @@
 
 [![GitHub deployments](https://img.shields.io/github/deployments/essteer/xuan-zang/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel)](https://www.xuan-zang.com/)
 [![Known Vulnerabilities](https://snyk.io/test/github/essteer/xuan-zang/badge.svg?name=Snyk&style=flat&logo=Snyk)](https://snyk.io/test/github/essteer/xuan-zang)
-[![](https://img.shields.io/badge/EJS-B4CA65.svg?style=flat&logo=EJS&logoColor=white&labelColor=555)](https://ejs.co/)
 
 I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
 
@@ -27,7 +26,13 @@ Images used include artworks, photographs, official logos and so on. Attribution
 To run on a local machine for local development, navigate to the root directory and run:
 
 ```console
-$ node index.js
+$ npx nodemon index.js
+[nodemon] 3.1.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+Serving on port 3000
 ```
 
 The key tools used to develop this website are [Embedded JavaScript](https://ejs.co/), `HTML`, `CSS` and `Node`. The original version of the site made heavy use of the [Bootstrap 5](https://getbootstrap.com/) framework, but this has since been reduced to a minimum to exert more direct control on the site's aesthetic.
