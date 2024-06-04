@@ -4,6 +4,8 @@ if (process.env.NODE_ENV !== "production") {
 
 const express = require("express");
 const app = express();
+// Disable X-Powered-By header for your Express app (Snyk)
+app.disable('x-powered-by');
 const path = require("path");
 const ejsMate = require("ejs-mate");
 const fs = require("fs");
@@ -18,7 +20,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Main index page
 app.get("/", (req, res) => {
   // sameSite: "lax" improves navigation performance by permitting back/forward cache restoration
-  res.cookie("cookieName", "cookieValue", { sameSite: "lax", secure: true });
+  res.cookie("cookieName", "cookieValue", { sameSite: "lax", secure: true, httpOnly: true });
   res.render("index");
 });
 

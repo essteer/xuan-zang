@@ -1,8 +1,10 @@
 # <img src="xuanzang.png" width="386" height="80">
 
-![GitHub deployments](https://img.shields.io/github/deployments/essteer/xuan-zang/Production) ![GitHub License](https://img.shields.io/github/license/essteer/xuan-zang?color=blue) ![GitHub last commit](https://img.shields.io/github/last-commit/essteer/xuan-zang?color=red) ![GitHub top language](https://img.shields.io/github/languages/top/essteer/xuan-zang?color=blue)
+[![GitHub deployments](https://img.shields.io/github/deployments/essteer/xuan-zang/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel)](https://www.xuan-zang.com/)
+[![Known Vulnerabilities](https://snyk.io/test/github/essteer/xuan-zang/badge.svg?name=Snyk&style=flat&logo=Snyk)](https://snyk.io/test/github/essteer/xuan-zang)
+[![](https://img.shields.io/badge/EJS-B4CA65.svg?style=flat&logo=EJS&logoColor=white&labelColor=555)](https://ejs.co/)
 
-I built [XUANZANG](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
+I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
 
 ### Content
 
@@ -20,11 +22,18 @@ More content will be added to these sections over time, with new sections also p
 
 Images used include artworks, photographs, official logos and so on. Attributions are explicit and I have sought permission from their owners to use these images; many have kindly granted this permission, but if you are the author of content here that you would like to be removed or amended, please contact me directly on [elliott@xuan-zang.com](elliott@xuan-zang.com).
 
-### Development notes
+### Development
+
+To run on a local machine for local development, navigate to the root directory and run:
+
+```console
+node index.js
+```
 
 The key tools used to develop this website are [Embedded JavaScript](https://ejs.co/), `HTML`, `CSS` and `Node`. The original version of the site made heavy use of the [Bootstrap 5](https://getbootstrap.com/) framework, but this has since been reduced to a minimum to exert more direct control on the site's aesthetic.
 
 Images are hosted on [Cloudinary](https://cloudinary.com/), and the site is deployed through [Vercel](https://vercel.com/) using a `CI/CD` workflow integrated with this repository.
+
 
 ### Fonts
 
