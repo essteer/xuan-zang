@@ -62,25 +62,14 @@ app.get("/:filename", (req, res) => {
   
   fs.readFile(markdownPath, "utf8", (err, data) => {
     if (err) {
-      res.send("File not found");
+      res.status(404);
+      res.render("utils/pagenotfound");
     } else {
       const htmlContent = marked(data);
       res.render("misc/misc", { content: htmlContent });
     }
   });
 });
-// Create a route for each Markdown post
-// fs.readdir('./views/misc', (err, files) => {
-//   files.forEach(file => {
-//     const name = file.split('.')[0];
-//     const filePath = path.join(__dirname, "views", "misc", file);
-//     const fileContents = fs.readFileSync(filePath, 'utf8');
-//     const html = marked(fileContents);
-//     app.get(`/${name}`, (req, res) => {
-//       res.render('post', { title: name, content: html });
-//     });
-//   });
-// });
 
 
 // Routes to article stubs
