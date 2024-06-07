@@ -1,7 +1,9 @@
-# <img src="xuanzang.png" width="386" height="80">
+<h1 align="center"><img src="./assets/xuanzang.png" width="386" height="80" style="border-radius: 5px;"></h1>
 
-[![GitHub deployments](https://img.shields.io/github/deployments/essteer/xuan-zang/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel)](https://www.xuan-zang.com/)
-[![Known Vulnerabilities](https://snyk.io/test/github/essteer/xuan-zang/badge.svg?name=Snyk&style=flat&logo=Snyk)](https://snyk.io/test/github/essteer/xuan-zang)
+<p align="center">
+  <a href="https://www.xuan-zang.com/"><img src="https://img.shields.io/github/deployments/essteer/xuan-zang/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel"></a>
+  <a href="https://snyk.io/test/github/essteer/xuan-zang"><img src="https://snyk.io/test/github/essteer/xuan-zang/badge.svg?name=Snyk&style=flat&logo=Snyk"></a>
+</p>
 
 I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
 
