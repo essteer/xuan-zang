@@ -54,7 +54,6 @@ app.get("/about", (req, res) => {
   res.render("about/about");
 });
 
-
 // Markdown to HTML rendering for entire pages
 app.get("/:filename", (req, res) => {
   const filename = req.params.filename;
@@ -71,12 +70,16 @@ app.get("/:filename", (req, res) => {
   });
 });
 
-
 // Routes to article stubs
-app.get("/:subroute/:stub", (req, res) => {
+app.get("/ink/moreink", (req, res) => {
   const subroute = req.params.subroute;
   const stub = req.params.stub;
-  res.render(`${subroute}/pages/${stub}`);
+  res.render("ink/pages/moreink");
+});
+app.get("/sources/print", (req, res) => {
+  const subroute = req.params.subroute;
+  const stub = req.params.stub;
+  res.render("sources/pages/print");
 });
 
 // 404 error page route
