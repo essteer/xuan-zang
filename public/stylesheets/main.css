@@ -2,7 +2,7 @@
     color-scheme: light only;
     --main-bg-colour: lch(8% 1.25 165);
     --main-txt-colour: lch(95% 5 82);
-    --navbar-bg-colour: lch(70% 18 270);
+    --navbar-bg-colour: lch(13.12% 7.71 287.17);
     --alt-bg-colour: lch(90% 3 100);
     --alt-txt-colour: lch(8% 1.25 165);
 
@@ -76,7 +76,7 @@ a {
 .navbar a, footer a {
     text-decoration: none;
     display: inline-block;
-    color: var(--alt-txt-colour);
+    color: var(--main-txt-colour);
 }
 
 .navbar a:before, footer a:before {
@@ -86,7 +86,7 @@ a {
     height: 1.25px;
     bottom: 0;
     left: 0;
-    background-color: var(--alt-txt-colour);
+    background-color: var(--main-txt-colour);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -110,14 +110,29 @@ a {
 }
 
 .navbar a:hover:before, footer a:hover:before, .main-anchor:hover:before {
+    color: var(--alt-txt-colour);
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
+.navbar .nav-link, 
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+    color: var(--main-txt-colour);
+}
+
+.navbar .navbar-brand, 
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active {
+    color: var(--main-txt-colour);
+}
+
 #btn-back-to-top {
     background-color: var(--navbar-bg-colour);
-    color: var(--alt-txt-colour);
+    color: var(--main-txt-colour);
     position: fixed;
     bottom: 55px;
     right: 20px;
@@ -252,3 +267,5 @@ ul.list {
 div.vertical-panel {
     writing-mode: vertical-rl;
 }
+
+
