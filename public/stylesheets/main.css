@@ -29,7 +29,7 @@ body {
     color: var(--alt-txt-colour);
 }
 
-.navbar, footer, h1, h2, h3 {
+.navbar, footer, h1, h2, h3, h6, #name {
     font-family: 'Oswald', sans-serif;
 }
 
