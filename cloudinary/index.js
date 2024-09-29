@@ -10,7 +10,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "Jestbral",
+    folder: "xuanzang",
     allowedFormats: ["jpeg", "png", "jpg"],
   },
 });
