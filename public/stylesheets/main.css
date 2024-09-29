@@ -14,6 +14,7 @@
 
 body {
     font-family: 'Source Serif Pro', 'Noto Serif TC', serif;
+    font-size: 1.2em;
     background-color: var(--main-bg-colour);
     color: var(--main-txt-colour);
     text-align: center;
@@ -227,7 +228,7 @@ ul.list {
 }
 
 .text-box, .caption {
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: center;
 }
 
