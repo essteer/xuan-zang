@@ -13,6 +13,8 @@ const ejsMate = require("ejs-mate");
 const fs = require("fs");
 // Parse front matter from Markdown files
 const { marked } = require("marked");
+// Get recursive file walk function
+const gatherPaths = require("./public/javascripts/recursivePathWalk");
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
@@ -32,36 +34,62 @@ app.use(limiter);
 
 // Main index page
 app.get("/", (req, res) => {
-  // sameSite: "lax" improves navigation performance by permitting back/forward cache restoration
   res.cookie("cookieName", "cookieValue", {
-    sameSite: "lax",
+    sameSite: "lax", // improves navigation performance by permitting back/forward cache restoration
     secure: true,
     httpOnly: true,
   });
   res.render("index");
 });
 
-// Main section routes
-app.get("/ink", (req, res) => {
-  res.render("ink/ink");
+app.get("/ink", function (req, res) {
+  const entriesDir = path.join(
+    __dirname, // walks through "content/entries" dir to render content
+    "views",
+    "ink",
+    "content",
+    "entries"
+  );
+  const entryPaths = gatherPaths(entriesDir);
+  res.render("ink/ink", { entryPaths: entryPaths });
 });
-app.get("/voice", (req, res) => {
-  res.render("voice/voice");
-});
-app.get("/sources", (req, res) => {
-  res.render("sources/sources");
-});
+
 app.get("/about", (req, res) => {
   res.render("about/about");
 });
 
-function isValidFilename(filename) {
-  return (
-    !filename.includes("..") &&
-    !filename.startsWith(".") &&
-    !filename.includes("/")
+app.get("/sources", (req, res) => {
+  const baseDir = path.join(
+    __dirname,
+    "views",
+    "sources",
+    "content",
+    "entries"
   );
-}
+  // gathers resources from specific subdirectory
+  const bookPaths = gatherPaths(path.join(baseDir, "books"));
+  const podcastPaths = gatherPaths(path.join(baseDir, "podcasts"));
+  const toolPaths = gatherPaths(path.join(baseDir, "tools"));
+
+  res.render("sources/sources", {
+    bookPaths: bookPaths,
+    podcastPaths: podcastPaths,
+    toolPaths: toolPaths,
+  });
+});
+
+app.get("/voice", (req, res) => {
+  const entriesDir = path.join(
+    // walks through "content/entries" dir to render content
+    __dirname,
+    "views",
+    "voice",
+    "content",
+    "entries"
+  );
+  const entryPaths = gatherPaths(entriesDir);
+  res.render("voice/voice", { entryPaths: entryPaths });
+});
 
 // Permitted Markdown pages exist in this directory
 const pagesDirectory = path.join(__dirname, "views", "misc", "pages");

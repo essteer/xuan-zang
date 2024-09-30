@@ -1,44 +1,30 @@
 <% layout("layouts/boilerplate") %>
-  <%- include("./content/intro.html") %>
+  <div class="container body-cols-medium-8">
+    <%- include("./content/intro.html") %>
+      <hr />
+  </div>
+  <div class="container body-cols-medium-8">
     <%- include("./content/pagelinks.html") %>
-      <!-- Back to top button -->
-      <button type="button" id="btn-back-to-top">
-        <i class="fas fa-arrow-up-long"></i>
-      </button>
+      <hr />
+  </div>
+  <!-- Back to top button -->
+  <button type="button" id="btn-back-to-top">
+    <i class="fas fa-arrow-up-long"></i>
+  </button>
 
-      <div class="container">
-        <!-- Amazing -->
-        <%- include("./content/entries/amazing.html") %>
-          <!-- Blah Art -->
-          <%- include("./content/entries/blah_art.html") %>
-            <!-- Bu Mingbai -->
-            <%- include("./content/entries/bu_mingbai.html") %>
-              <!-- Chiang Hsun -->
-              <%- include("./content/entries/chiang_hsun.html") %>
-                <!-- Dagong Tan -->
-                <%- include("./content/entries/dagong_tan.html") %>
-                  <!-- Eye on East Asia -->
-                  <%- include("./content/entries/eye_on_east_asia.html") %>
-                    <!-- Gushi FM -->
-                    <%- include("./content/entries/gushi_fm.html") %>
-                      <!-- Intro -->
-                      <%- include("./content/entries/intro.html") %>
-                        <!-- Left-Right -->
-                        <%- include("./content/entries/left_right.html") %>
-                          <!-- Mei De Chen Si -->
-                          <%- include("./content/entries/mei_de_chen_si.html") %>
-                            <!-- Midnight Talks -->
-                            <%- include("./content/entries/midnight_talks.html") %>
-                              <!-- Salon des Refuses -->
-                              <%- include("./content/entries/salon_des_refuses.html") %>
-                                <!-- Simon Shen -->
-                                <%- include("./content/entries/simon_shen.html") %>
-                                  <!-- Stochastic Volatility -->
-                                  <%- include("./content/entries/stochastic_volatility.html") %>
-                                    <!-- Talking Literature -->
-                                    <%- include("./content/entries/talking_literature.html") %>
-                                      <!-- YiXi -->
-                                      <%- include("./content/entries/yixi.html") %>
+  <div class="container">
+    <!-- Dynamically load resources from "content/entries" -->
+    <% entryPaths.forEach(function(entryPath) { %>
+      <div class="container body-cols-medium-8">
+        <%- include(entryPath) %>
+          <hr />
       </div>
+      <% }); %>
+  </div>
 
-      <script src="/javascripts/toTopButton.js"></script>
+  <div class="container body-cols-medium-8">
+    <%- include("./content/outro.html") %>
+  </div>
+
+  <script src="/javascripts/recursivePathWalk.js"></script>
+  <script src="/javascripts/toTopButton.js"></script>

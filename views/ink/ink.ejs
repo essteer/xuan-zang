@@ -1,72 +1,32 @@
 <% layout("layouts/boilerplate") %>
-  <%- include("./content/intro.html") %>
-    <div class="container">
-      <%- include("./content/pagelinks.html") %>
-    </div>
-    <!-- Back to top button -->
-    <button type="button" id="btn-back-to-top">
-      <i class="fas fa-arrow-up-long"></i>
-    </button>
+  <div class="container body-cols-medium-8">
+    <%- include("./content/intro.html") %>
+      <hr />
+  </div>
+  <div class="container body-cols-medium-8">
+    <%- include("./content/pagelinks.html") %>
+      <hr />
+  </div>
+  <!-- Back to top button -->
+  <button type="button" id="btn-back-to-top">
+    <i class="fas fa-arrow-up-long"></i>
+  </button>
 
-    <div class="container">
-      <!-- Eileen Chang -->
-      <%- include("./content/entries/c/chang_eileen.html") %>
-        <!-- Chen Hsueh -->
-        <%- include("./content/entries/c/chen_hsueh.html") %>
-          <!-- Chen Zhongshi -->
-          <%- include("./content/entries/c/chen_zhongshi.html") %>
-            <!-- Chiang Hsun -->
-            <%- include("./content/entries/c/chiang_hsun.html") %>
-              <!-- China Heritage -->
-              <%- include("./content/entries/c/china_heritage.html") %>
-                <!-- China Unoffical Archives -->
-                <%- include("./content/entries/c/china_unofficial_archives.html") %>
-                  <!-- Chu T'ien-wen -->
-                  <%- include("./content/entries/c/chu_tienwen.html") %>
-                    <!-- Feng Tang -->
-                    <%- include("./content/entries/f/feng_tang.html") %>
-                      <!-- Hao Jingfang -->
-                      <%- include("./content/entries/h/hao_jingfang.html") %>
-                        <!-- Hsieh Tzu-fan -->
-                        <%- include("./content/entries/h/hsieh_tzufan.html") %>
-                          <!-- LEAP -->
-                          <%- include("./content/entries/l/leap.html") %>
-                            <!-- Leung Man-tao -->
-                            <%- include("./content/entries/l/leung_mantao.html") %>
-                              <!-- Liu Cixin -->
-                              <%- include("./content/entries/l/liu_cixin.html") %>
-                                <!-- Liu Yichang -->
-                                <%- include("./content/entries/l/liu_yichang.html") %>
-                                  <!-- Lu Xun -->
-                                  <%- include("./content/entries/l/lu_xun.html") %>
-                                    <!-- Qi Jun -->
-                                    <%- include("./content/entries/q/qi_jun.html") %>
-                                      <!-- Qian Zhongshu -->
-                                      <%- include("./content/entries/q/qian_zhongshu.html") %>
-                                        <!-- Resonate -->
-                                        <%- include("./content/entries/r/resonate.html") %>
-                                          <!-- Sang Zhang -->
-                                          <%- include("./content/entries/s/sang_zhang.html") %>
-                                            <!-- Sanmao -->
-                                            <%- include("./content/entries/s/sanmao.html") %>
-                                              <!-- Wang Mun Kiat -->
-                                              <%- include("./content/entries/w/wang_munkiat.html") %>
-                                                <!-- Wang Shuo -->
-                                                <%- include("./content/entries/w/wang_shuo.html") %>
-                                                  <!-- Wang Xiaobo -->
-                                                  <%- include("./content/entries/w/wang_xiaobo.html") %>
-                                                    <!-- Wu Ming-Yi -->
-                                                    <%- include("./content/entries/w/wu_mingyi.html") %>
-                                                      <!-- Xue Yiwei -->
-                                                      <%- include("./content/entries/x/xue_yiwei.html") %>
-                                                        <!-- Yang Weidong -->
-                                                        <%- include("./content/entries/y/yang_weidong.html") %>
-                                                          <!-- Yibao -->
-                                                          <%- include("./content/entries/y/yibao.html") %>
-                                                            <!-- Yu Hua -->
-                                                            <%- include("./content/entries/y/yu_hua.html") %>
-                                                              <!-- Zhang Yinlin -->
-                                                              <%- include("./content/entries/z/zhang_yinlin.html") %>
+  <div class="container">
+    <!-- Dynamically load resources from "content/entries" -->
+    <% entryPaths.forEach(function(entryPath) { %>
+      <div class="container body-cols-medium-8">
+        <%- include(entryPath) %>
+          <hr />
+      </div>
+      <% }); %>
+  </div>
+
+  <div class="container">
+    <div class="container-fluid col-md-8">
+      <%- include("./content/outro.html") %>
     </div>
-    <%- include("./content/outro.html") %>
-      <script src="/javascripts/toTopButton.js"></script>
+  </div>
+
+  <script src="/javascripts/recursivePathWalk.js"></script>
+  <script src="/javascripts/toTopButton.js"></script>

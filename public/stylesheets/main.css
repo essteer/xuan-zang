@@ -52,8 +52,11 @@ h6,
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  display: block;
+  margin: 0 auto;
+
+  max-width: 80%;
+  height: auto;
 }
 
 .chinese-heading {
@@ -245,8 +248,12 @@ ul.list {
 .podcast-thumbs {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .podcast-thumb {
+  flex: 0 0 auto;
+
   max-width: 140px;
   max-height: 140px;
 }
@@ -265,6 +272,12 @@ ul.list {
 .app-thumb img,
 .app-thumb-wide img {
   border-radius: 7.5px;
+}
+.podcast-thumb img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-box,
@@ -314,4 +327,27 @@ ul.list {
 }
 div.vertical-panel {
   writing-mode: vertical-rl;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+}
+
+#csymbol {
+  text-align: center;
+  margin-top: 3px;
+  padding: 3px;
 }
