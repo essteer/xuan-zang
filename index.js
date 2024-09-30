@@ -96,7 +96,7 @@ app.get("/works/voice", (req, res) => {
 // Permitted Markdown pages exist in this directory
 const pagesDirectory = path.join(__dirname, "views", "works", "misc", "pages");
 // Markdown to HTML rendering for entire pages
-app.get("/:filename", (req, res) => {
+app.get("/works/:filename", (req, res) => {
   const filename = req.params.filename;
   const markdownPath = path.join(pagesDirectory, `${filename}.md`);
 
