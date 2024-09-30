@@ -42,18 +42,6 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/ink", function (req, res) {
-  const entriesDir = path.join(
-    __dirname, // walks through "content/entries" dir to render content
-    "views",
-    "ink",
-    "content",
-    "entries"
-  );
-  const entryPaths = gatherPaths(entriesDir);
-  res.render("ink/ink", { entryPaths: entryPaths });
-});
-
 app.get("/about", (req, res) => {
   res.render("about/about");
 });
@@ -78,21 +66,35 @@ app.get("/sources", (req, res) => {
   });
 });
 
-app.get("/voice", (req, res) => {
+app.get("/works/ink", function (req, res) {
+  const entriesDir = path.join(
+    __dirname, // walks through "content/entries" dir to render content
+    "views",
+    "works",
+    "ink",
+    "content",
+    "entries"
+  );
+  const entryPaths = gatherPaths(entriesDir);
+  res.render("works/ink/ink", { entryPaths: entryPaths });
+});
+
+app.get("/works/voice", (req, res) => {
   const entriesDir = path.join(
     // walks through "content/entries" dir to render content
     __dirname,
     "views",
+    "works",
     "voice",
     "content",
     "entries"
   );
   const entryPaths = gatherPaths(entriesDir);
-  res.render("voice/voice", { entryPaths: entryPaths });
+  res.render("works/voice/voice", { entryPaths: entryPaths });
 });
 
 // Permitted Markdown pages exist in this directory
-const pagesDirectory = path.join(__dirname, "views", "misc", "pages");
+const pagesDirectory = path.join(__dirname, "views", "works", "misc", "pages");
 // Markdown to HTML rendering for entire pages
 app.get("/:filename", (req, res) => {
   const filename = req.params.filename;
@@ -109,7 +111,7 @@ app.get("/:filename", (req, res) => {
           res.render("utils/pagenotfound");
         } else {
           const htmlContent = marked(data);
-          res.render("misc/misc", { content: htmlContent });
+          res.render("works/misc/misc", { content: htmlContent });
         }
       });
     }
@@ -117,15 +119,15 @@ app.get("/:filename", (req, res) => {
 });
 
 // Routes to article stubs
-app.get("/ink/moreink", (req, res) => {
-  const subroute = req.params.subroute;
-  const stub = req.params.stub;
-  res.render("ink/pages/moreink");
-});
 app.get("/sources/print", (req, res) => {
   const subroute = req.params.subroute;
   const stub = req.params.stub;
   res.render("sources/pages/print");
+});
+app.get("/works/ink/moreink", (req, res) => {
+  const subroute = req.params.subroute;
+  const stub = req.params.stub;
+  res.render("works/ink/pages/moreink");
 });
 
 // 404 error page route
