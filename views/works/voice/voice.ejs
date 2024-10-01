@@ -1,9 +1,9 @@
 <% layout("layouts/boilerplate") %>
-  <div class="container body-cols-medium-8">
+  <div class="container body-main-column">
     <%- include("./content/intro.html") %>
       <hr />
   </div>
-  <div class="container body-cols-medium-8">
+  <div class="container body-main-column">
     <%- include("./content/pagelinks.html") %>
       <hr />
   </div>
@@ -15,14 +15,14 @@
   <div class="container">
     <!-- Dynamically load resources from "content/entries" -->
     <% entryPaths.forEach(function(entryPath) { %>
-      <div class="container body-cols-medium-8">
+      <div class="container body-main-column">
         <%- include(entryPath) %>
           <hr />
       </div>
       <% }); %>
   </div>
 
-  <div class="container body-cols-medium-8">
+  <div class="container body-main-column">
     <%- include("./content/outro.html") %>
   </div>
 

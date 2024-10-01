@@ -36,7 +36,7 @@ The site previously relied heavily on Bootstrap, but over time this is being rem
 
 ### Installation
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=flat&labelColor=555&logo=GitHub&logoColor=white)](https://github.com/essteer/xuan-zang)
+[![Git](https://img.shields.io/badge/Git-F05032.svg?style=flat&labelColor=555&logo=Git&logoColor=white)](https://github.com/essteer/xuan-zang)
 
 Clone the repo from GitHub:
 
