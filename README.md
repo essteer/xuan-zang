@@ -9,7 +9,7 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&labelColor=555&logo=HTML5&logoColor=white"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&labelColor=555&logo=CSS3&logoColor=white"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&labelColor=555&logo=JavaScript&logoColor=white"></a>
-  <a href="https://ejs.co/"><img src="https://img.shields.io/badge/EJS-B4CA65.svg?style=flat&labelColor=555&logo=EJS&logoColor=white"></a>
+  <a href="https://ejs.co/"><img src="https://img.shields.io/badge/EJS-A91E50.svg?style=flat&labelColor=555&logo=EJS&logoColor=white"></a>
   <a href="https://daringfireball.net/projects/markdown/"><img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&labelColor=555&logo=Markdown&logoColor=white"></a>
   <a href="https://nodejs.org/en"><img src="https://img.shields.io/badge/Node.js-5FA04E.svg?style=flat&labelColor=555&logo=nodedotjs&logoColor=white"></a>
   <a href="https://vercel.com"><img src="https://img.shields.io/badge/Vercel-000000.svg?style=flat&labelColor=555&logo=Vercel&logoColor=white"></a>
@@ -17,7 +17,7 @@
 
 I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
 
-This is and was my first effort at developing a public-facing website, and makes use of standard HTML and CSS tools. A less conventional component is the use of Embedded JavaScript, a templating tool that enables JavaScript to be written directly into HTML. More recently I've experimented with rendering content from Markdown pages as well.
+This is and was my first effort at developing a public-facing website, and makes use of standard HTML and CSS tools. A less common component is the use of Embedded JavaScript, a templating tool that enables JavaScript to be written directly into HTML. More recently I've experimented with rendering content from Markdown pages as well.
 
 The site previously relied heavily on Bootstrap, but over time this is being removed in favour of custom content. I tend to prefer to learn the fundamentals rather than rely on frameworks, but otherwise Bootstrap was a good entrypoint to creating the initial design.
 
@@ -29,6 +29,8 @@ The site previously relied heavily on Bootstrap, but over time this is being rem
 - [Deployment](#deployment)
 - [Content](#content)
   - [Fonts](#fonts)
+  - [Images](#images)
+  - [Vertical text](#vertical-text)
   - [Writing](#writing)
 - [Acknowledgements](#acknowledgements)
 
@@ -119,6 +121,33 @@ To optimise use of web fonts, practices have been adopted from [CSS Wizardy](htt
 Images are hosted on [Cloudinary](https://cloudinary.com/), and include artworks, photographs, official logos and so on.
 
 Attributions are explicit and I have sought permission from owners to use their images &mdash; many have kindly granted this permission, but if you are the author of content here that you would like to be removed or amended, please contact me directly on [elliott@xuan-zang.com](elliott@xuan-zang.com).
+
+### Vertical text
+
+[![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&labelColor=555&logo=CSS3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+A challenge arose when designing a page that contains Chinese text displayed in vertical format. I wanted to present two text-boxes that showed the same passage rendered horizontally and then vertically.
+
+Horizontal display that adapts to screen size changes is easily achieved through standard tools and attributes such as flexbox.
+
+Vertical display is less straightforward. A W3C article "[Styling vertical Chinese, Japanese, Korean and Mongolian text](https://www.w3.org/International/articles/vertical-text/)" got me started with wrapping text in columns, but achieving a responsive display proved more difficult.
+
+I initially wanted to begin with a fixed height for the text-box on screens wide enough to achieve a given number of columns, but then extend the height of the columns as the screen narrowed. The text often slipped off one side of the screen, or resulted in too much whitespace when trying to find a balance between height and width for wider screens.
+
+In the end I opted to use overflow on the x-axis with a fixed height, so that users could scroll horizontally to view any text not immediately visible (in the same we we scroll down on a typical website).
+
+The key attributes used &mdash; ignoring colours and dimensions &mdash; are:
+
+```css
+.vertical-panel {
+  writing-mode: vertical-rl;
+  overflow-x: auto;
+}
+```
+
+The end result is [here](https://www.xuan-zang.com/sources/print#text-direction) in the second text-box.
+
+I may revisit this another time or experiment with vertical rendering elsewhere.
 
 ### Writing
 
