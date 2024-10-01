@@ -1,0 +1,30 @@
+<% layout("layouts/boilerplate") %>
+  <div class="container body-main-column">
+    <%- include("./content/intro.html") %>
+      <hr />
+  </div>
+  <div class="container body-main-column">
+    <%- include("./content/pagelinks.html") %>
+      <hr />
+  </div>
+  <!-- Back to top button -->
+  <button type="button" id="btn-back-to-top">
+    <i class="fas fa-arrow-up-long"></i>
+  </button>
+
+  <div class="container">
+    <!-- Dynamically load resources from "content/entries" -->
+    <% entryPaths.forEach(function(entryPath) { %>
+      <div class="container body-main-column">
+        <%- include(entryPath) %>
+          <hr />
+      </div>
+      <% }); %>
+  </div>
+
+  <div class="container body-main-column">
+    <%- include("./content/outro.html") %>
+  </div>
+
+  <script src="/javascripts/recursivePathWalk.js"></script>
+  <script src="/javascripts/toTopButton.js"></script>
