@@ -130,8 +130,11 @@ a {
   border-radius: 50%;
   display: none;
   border: 0px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .body-main-column {
