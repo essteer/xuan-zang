@@ -1,116 +1,14 @@
 <% layout("layouts/boilerplate") %>
-<div class="container">
-  <!-- Introduction -->
-  <h1>PRINT&nbsp;<span class="chinese-heading">印</span></h1>
-  <div class="container-fluid col-md-8">
-    <p>Brief notes on Chinese characters and typesetting.</p>
-    <!-- Dividing line -->
-    <hr />
+  <!-- Back to top button -->
+  <button type="button" id="btn-back-to-top">
+    <i class="fas fa-arrow-up-long"></i>
+  </button>
+  <!-- Include the More Ink content -->
+  <div class="container body-main-column">
+    <%- include("./print.html") %>
   </div>
-  <!-- Introduction -->
-</div>
-<!-- Back to top button -->
-<button type="button" id="btn-back-to-top">
-  <i class="fas fa-arrow-up-long"></i>
-</button>
-<!-- Characters -->
-<div class="container">
-  <div class="container-fluid col-md-8">
-    <div>
-      <h2>Characters&nbsp;<span class="chinese-heading">繁體與簡體</span></h2>
-    </div>
-  </div>
-  <div class="container-fluid col-md-8">
-    <p>
-      Depending on how and where you learnt to read Chinese, you may be familiar
-      with either traditional 繁體字 or simplified characters 簡體字 .
-    </p>
-    <p>
-      The latter are officially used in the People's Republic of China and
-      Singapore; traditional characters are still going strong in Hong Kong and
-      Taiwan, and across much of the diaspora.
-    </p>
-  </div>
-  <div class="container-fluid col-sm-6">
-    <img
-      src="https://res.cloudinary.com/duiqzld67/image/upload/v1683037516/xuanzang/Wu_Shanzhuan_-_Swearing_in_Front_of_the_Flag_with_False_Chinese_Characters_kymxwh.webp"
-      class="img-fluid image"
-      alt="Wu Shanzhuan's 1988 piece, Swearing in Front of the Flag with False Chinese Characters"
-    />
-  </div>
-  <div class="container-fluid col-md-8">
-    <p class="caption">
-      Swearing in Front of the Flag with False Chinese Characters
-      《錯別字旗幟前的宣誓》, 1988, <nobr>Wu Shanzhuan 吳山專,</nobr> courtesy
-      of the M+ Collection
-    </p>
-  </div>
-  <div class="container-fluid col-md-8">
-    <p>
-      I recommend learning traditional characters to get the most out of the
-      written language in its intended form.
-    </p>
-    <p>
-      If like me, you began with simplified characters and want to learn
-      traditional, or vice versa, flashcard apps can get you up to speed with
-      the other form in a short period of time. See the Study Materials section
-      of <a href="/sources">SOURCES</a> for details.
-    </p>
-    <!-- Dividing line -->
-    <hr />
-  </div>
-  <!-- Characters -->
-</div>
-<!-- Text Direction -->
-<div class="container">
-  <div class="container-fluid col-md-8">
-    <div>
-      <h2>
-        Text Direction&nbsp;<span class="chinese-heading">横排與竖排</span>
-      </h2>
-    </div>
-  </div>
-  <div class="container-fluid col-md-8">
-    <p>
-      Simplified books are usually set horizontally 橫排 in the same way as
-      English-language books - spine on the left-hand side of the front cover,
-      text printed in rows from left to right, like this:
-    </p>
-    <div class="container-fluid col-md-8 text-box-cn">
-      <p class="text-indent">
-        折疊城市分三層空間。大地的一面是第一空間，五百萬人口，生存時間是從清晨六點到第二天清晨六點。空間休眠，大地翻轉。翻轉后的另一面是第二空間和第三空間。第二空間生活著兩千五百萬人口，從次日清晨六點到夜晚十點，第三空間生活著五千萬人，從十點到清晨六點，然后回到第一空間。時間經過了精心規劃和最優分配，小心翼翼隔離，五百萬人享用二十四小時，七千五百萬人享用另外二十四小時。
-      </p>
-      <p class="text-indent">
-        大地的兩側重量並不均衡，為了平衡這種不均，第一空間的土地更厚，土壤裡埋藏配重物質。人口和建筑的失衡用土地來換。第一空間居民也因而認為自身的底蘊更厚。
-      </p>
-    </div>
-    <p>
-      Books in traditional characters may also be printed this way, but often
-      are set vertically 豎排 in the traditional style - spine on the right-hand
-      side of the front cover, text printed in columns from right to left, like
-      this:
-    </p>
-    <div class="container-fluid col-sm-8 vertical-panel text-box-cn">
-      <p class="text-indent">
-        折疊城市分三層空間。大地的一面是第一空間，五百萬 人口，生存
-        時間是從清晨六點到第二天清晨六點。空間休眠，大地翻轉。翻轉后的
-        另一面是第二空間和第三空間。第二空間生活著兩千五百萬人口，從次
-        日清晨六點到夜晚十點，第三空間生活著五千萬人，從十點到清晨六
-        點，然后回到第一空間。時間經過了精心規劃和最優分配，小心翼翼隔
-        離，五百萬人享用二十四小時，七千五百萬人享用另外二十四小時。
-      </p>
-      <p class="text-indent">
-        大地的兩側重量並不均衡，為了平衡這種不均，第一空間的土地更
-        厚，土壤裡埋藏配重物質。人口和建筑的失衡用土地來換。第一空間居
-        民也因而認為自身的底蘊更厚。
-      </p>
-    </div>
-    <p>
-      The excerpts above are from Hao Jingfang's 郝景芳 Folding Beijing
-      《北京摺曡》.
-    </p>
-  </div>
-  <!-- Text Direction -->
-</div>
-<div class="return-link">Back to <a href="/sources">SOURCES</a></div>
-<script src="/javascripts/toTopButton.js"></script>
+
+  <div class="return-link"><a href="/sources" class="main-anchor name"><span class="chinese-heading">回</span>&nbsp;<span
+        id="name">SOURCES</span>&nbsp;<span class="chinese-heading">源</span></a></div>
+
+  <script src="/javascripts/toTopButton.js"></script>
