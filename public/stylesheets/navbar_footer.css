@@ -1,0 +1,183 @@
+:root {
+  --navbar-height: 64px;
+  --navbar-bg-color:  lch(13.12% 7.71 287.17);
+  --main-txt-color: lch(95% 5 82);
+}
+
+#navbar {
+  --navbar-height: 64px;
+  position: fixed;
+  height: var(--navbar-height);
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 8000;
+  transition: top 0.3s ease-in-out;
+}
+
+#navbar,
+footer {
+  background-color: var(--navbar-bg-colour);
+  color: var(--main-txt-colour);
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.navbar-brand,
+.navbar-link {
+  text-decoration: none;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+}
+
+.navbar-item {
+  justify-content: center;
+  width: 100%;
+  margin: 0.4em;
+  padding: 0.2em 0.8em;
+  border-radius: 5px;
+}
+
+#navbar-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9000;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  color: var(--main-txt-color);
+}
+
+.toggle-icon::before {
+  content: "三";
+}
+
+#navbar-toggle[aria-expanded="true"] .toggle-icon::before {
+  content: "乂";
+}
+
+#navbar-menu {
+  position: fixed;
+  top: var(--navbar-height);
+  opacity: 1;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  background-color: var(--navbar-bg-color);
+}
+
+#navbar-toggle[aria-expanded="true"] + #navbar-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-links {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--navbar-bg-color);
+}
+
+#navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+  padding: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  #navbar-toggle,
+  #navbar-toggle[aria-expanded="true"] {
+    display: none;
+  }
+
+  #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  .navbar-links,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#navbar a,
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: var(--main-txt-color);
+}
+
+#navbar a:before,
+footer a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.25px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-txt-colour); /* Color of underline bar */
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#navbar a:hover:before,
+footer a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  margin: 0 1.5rem;
+}
+
+#csymbol {
+  padding: 3px;
+}

@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 function gatherPaths(directory) {
     let entryPaths = [];
@@ -10,7 +10,7 @@ function gatherPaths(directory) {
       entries.forEach(entry => {
         if (entry.isDirectory()) {
           traverse(path.join(dir, entry.name));
-        } else if (entry.isFile() && path.extname(entry.name) === ".html") {
+        } else if (entry.isFile() && path.extname(entry.name) === '.html') {
           const filePath = path.join(dir, entry.name);
           entryPaths.push(filePath);
         }
