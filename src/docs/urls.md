@@ -23,6 +23,7 @@ A list of external URLs referenced throughout the site.
 | VOICE | YiXi | https://www.yixi.tv |
 | SOURCES | Anki | https://apps.ankiweb.net/ |
 | SOURCES | Books.com.tw | https://www.books.com.tw/web/ovs |
+| SOURCES | Fluent in 3 Months | https://www.fluentin3months.com/spaced-repetition/ |
 | SOURCES | Foyles | https://www.foyles.co.uk/ |
 | SOURCES | Hacking Chinese | https://www.hackingchinese.com/ |
 | SOURCES | Haodoo | https://haodoo.net/ |

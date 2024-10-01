@@ -6,6 +6,7 @@
   --navbar-bg-colour: lch(13.12% 7.71 287.17);
   --alt-bg-colour: lch(90% 3 100);
   --alt-txt-colour: lch(8% 1.25 165);
+  --ext-url-colour: lch(44.79% 27.89 289.31);
 
   --half-margin: 0.5rem;
   --main-margin: 1rem;
@@ -87,6 +88,7 @@ p,
 a {
   position: relative;
   color: var(--main-txt-colour);
+  text-underline-offset: 2px;
 }
 
 .main-anchor {
@@ -293,4 +295,14 @@ ul.list {
   width: 100%;
   max-width: 365px;
   height: 480px;
+}
+
+/* Coloured underlines on links to other domains */
+.external-url {
+  text-decoration-color: var(--ext-url-colour);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+.external-url:hover {
+  color: var(--ext-url-colour);
 }
