@@ -6,7 +6,7 @@
   --navbar-bg-colour: lch(13.12% 7.71 287.17);
   --alt-bg-colour: lch(90% 3 100);
   --alt-txt-colour: lch(8% 1.25 165);
-  --ext-url-colour: lch(44.79% 27.89 289.31);
+  --highlight-colour: lch(75% 20 260);
 
   --half-margin: 0.5rem;
   --main-margin: 1rem;
@@ -310,10 +310,27 @@ ul.list {
 
 .external-url {
   /* Global external URL links */
-  text-decoration-color: var(--ext-url-colour);
+  text-decoration-color: var(--highlight-colour);
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
 .external-url:hover {
-  color: var(--ext-url-colour);
+  color: var(--highlight-colour);
+}
+
+.title-en {
+  font-style: italic;
+}
+
+.person-zh,
+.title-zh {
+  white-space: nowrap;
+}
+.title-zh::before {
+  content: "《";
+  color: var(--highlight-colour);
+}
+.title-zh::after {
+  content: "》";
+  color: var(--highlight-colour);
 }
