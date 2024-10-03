@@ -2,19 +2,20 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
 
+const ejsMate = require('ejs-mate');
 const express = require('express');
 const rateLimit = require('express-rate-limit');
-const app = express();
-// Disable X-Powered-By header for your Express app (Snyk)
-app.disable('x-powered-by');
-const path = require('path');
-const ejsMate = require('ejs-mate');
 // Built-in module to access and interact with file system
 const fs = require('fs');
+const path = require('path');
 // Parse front matter from Markdown files
 const { marked } = require('marked');
 // Get recursive file walk function
 const gatherPaths = require('./public/javascripts/recursivePathWalk');
+
+const app = express();
+// Disable X-Powered-By header for your Express app (Snyk)
+app.disable('x-powered-by');
 
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
@@ -32,13 +33,18 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store');
+  res.set('Expires', '0');
+  res.set('Pragma', 'no-cache');
+  res.set('X-Content-Type-Options', 'nosniff');
+  res.set('X-Frame-Options', 'SAMEORIGIN');
+  res.set('X-XSS-Protection', '1; mode=block');
+  next();
+});
+
 // Main index page
 app.get('/', (req, res) => {
-  res.cookie('cookieName', 'cookieValue', {
-    sameSite: 'lax', // improves navigation performance by permitting back/forward cache restoration
-    secure: true,
-    httpOnly: true,
-  });
   res.render('index');
 });
 
