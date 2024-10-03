@@ -60,7 +60,7 @@ $ npm install
 To run on a local machine for local development, navigate to the root directory and run:
 
 ```console
-$ npx nodemon index.js
+$ npx nodemon src/index.js
 [nodemon] 3.1.3
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching path(s): *.*
