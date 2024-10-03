@@ -6,11 +6,31 @@
   --navbar-bg-colour: lch(13.12% 7.71 287.17);
   --alt-bg-colour: lch(90% 3 100);
   --alt-txt-colour: lch(8% 1.25 165);
+  --highlight-colour: lch(75% 20 260);
 
   --half-margin: 0.5rem;
   --main-margin: 1rem;
   --more-margin: 1.5rem;
   --wide-margin: 3rem;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  border-radius: 50%;
+  
+  background-color: var(--navbar-bg-colour);
+  color: var(--main-txt-colour);
+  
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
 }
 
 body {
@@ -30,18 +50,23 @@ body {
   width: 100%;
   max-width: 950px;
 
-  padding-left: 15px; /* Responsive padding */
-  padding-right: 15px;
   margin-left: auto; /* Center the container */
   margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h6,
-#name {
-  font-family: "Oswald", sans-serif;
+.body-main-column {
+  width: 100%; /* Default to full width on small screens */
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media (min-width: 768px) {
+  .body-main-column {
+    width: 70%; /* Medium and larger screens */
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 img {
@@ -52,13 +77,20 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+#name {
+  font-family: "Oswald", sans-serif;
+}
+
 .chinese-heading {
   font-family: "ZCOOL QingKe HuangYou";
 }
 
-/* Centre-align capitalised headings and characters */
 h1,
 .h2-link {
+  /* Centre-align capitalised headings and characters */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +119,7 @@ p,
 a {
   position: relative;
   color: var(--main-txt-colour);
+  text-underline-offset: 2px;
 }
 
 .main-anchor {
@@ -117,29 +150,6 @@ a {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-#btn-back-to-top {
-  background-color: var(--navbar-bg-colour);
-  color: var(--main-txt-colour);
-  position: fixed;
-  bottom: 55px;
-  right: 20px;
-  border-radius: 50%;
-  display: none;
-  border: 0px;
-  width: 35px;
-  height: 35px;
-}
-
-.body-main-column {
-  width: 100%; /* Default to full width on small screens */
-}
-
-@media (min-width: 768px) {
-  .body-main-column {
-    width: 66.6667%; /* Set to 2/3 width on medium and larger screens */
-  }
 }
 
 /* Containers that can form multiple adjacent columns (newspaper-style) */
@@ -196,6 +206,7 @@ ul.list {
 }
 
 .podcast {
+  /* VOICE page images */
   max-width: 160px;
   max-height: 160px;
   margin-top: var(--main-margin);
@@ -206,7 +217,7 @@ ul.list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--main-margin);
 }
 .podcast-thumb {
   flex: 0 0 auto;
@@ -215,6 +226,7 @@ ul.list {
   max-height: 140px;
 }
 .app-thumb {
+  /* SOURCES page images */
   max-width: 85px;
   max-height: 85px;
   margin-top: var(--wide-margin);
@@ -244,6 +256,7 @@ ul.list {
 
 .text-box,
 .caption {
+  /* Global text-boxes and image captions */
   font-family: "Oswald", sans-serif;
 }
 
@@ -257,7 +270,7 @@ ul.list {
 .text-box-cn {
   background-color: var(--alt-bg-colour);
   color: var(--alt-txt-colour);
-  padding: 0.5rem;
+  padding: var(--half-margin);
   border-radius: 5px;
 }
 
@@ -275,22 +288,49 @@ ul.list {
   }
 }
 
-.caption,
-.image {
+.caption {
   margin-top: var(--half-margin);
 }
 
-/* For Chinese text boxes */
 .text-indent {
+  /* Chinese text boxes */
   text-indent: 32px;
   margin: 0;
 }
 
 .vertical-panel {
+  /* Column-display Chinese text */
   writing-mode: vertical-rl;
   overflow-x: auto;
 
   width: 100%;
   max-width: 365px;
   height: 480px;
+}
+
+.external-url {
+  /* Global external URL links */
+  text-decoration-color: var(--highlight-colour);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+.external-url:hover {
+  color: var(--highlight-colour);
+}
+
+.title-en {
+  font-style: italic;
+}
+
+.person-zh,
+.title-zh {
+  white-space: nowrap;
+}
+.title-zh::before {
+  content: "《";
+  color: var(--highlight-colour);
+}
+.title-zh::after {
+  content: "》";
+  color: var(--highlight-colour);
 }

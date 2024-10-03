@@ -9,22 +9,19 @@
   </div>
   <!-- Back to top button -->
   <button type="button" id="btn-back-to-top">
-    <i class="fas fa-arrow-up-long"></i>
+    个
   </button>
 
-  <div class="container">
+  <% entryPaths.forEach(function(entryPath) { %>
     <!-- Dynamically load resources from "content/entries" -->
-    <% entryPaths.forEach(function(entryPath) { %>
+    <div class="container body-main-column">
+      <%- include(entryPath) %>
+        <hr />
+    </div>
+    <% }); %>
+
       <div class="container body-main-column">
-        <%- include(entryPath) %>
-          <hr />
+        <%- include("./content/outro.html") %>
       </div>
-      <% }); %>
-  </div>
 
-  <div class="container body-main-column">
-    <%- include("./content/outro.html") %>
-  </div>
-
-  <script src="/javascripts/recursivePathWalk.js"></script>
-  <script src="/javascripts/toTopButton.js"></script>
+      <script src="/javascripts/toTopButton.js"></script>
