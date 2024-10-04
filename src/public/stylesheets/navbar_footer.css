@@ -163,7 +163,8 @@ footer a:hover:before {
 
 footer {
   text-align: center;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
+  margin-top: auto;
   padding: 1.5rem 0;
 }
 
@@ -176,6 +177,10 @@ footer {
 
 .footer-link {
   margin: 0 1.5rem;
+}
+
+.footer-margin {
+  min-height: 150px;
 }
 
 #csymbol {
