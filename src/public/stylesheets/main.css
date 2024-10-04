@@ -122,12 +122,12 @@ a {
   text-underline-offset: 2px;
 }
 
-.main-anchor {
-  text-decoration: none;
-}
-
 .return-link {
   margin-top: var(--wide-margin);
+}
+
+.main-anchor {
+  text-decoration: none;
 }
 
 .main-anchor:before {
@@ -333,4 +333,11 @@ ul.list {
 .title-zh::after {
   content: "》";
   color: var(--highlight-colour);
+}
+
+.error-pages {
+  margin-top: 20vh;
+}
+.error-pages p {
+  text-align: center;
 }
