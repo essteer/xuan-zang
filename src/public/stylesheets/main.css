@@ -311,7 +311,7 @@ ul.list {
 
   width: 100%;
   max-width: 365px;
-  height: 480px;
+  max-height: 480px;
 }
 
 .external-url {
@@ -324,10 +324,13 @@ ul.list {
   color: var(--highlight-colour);
 }
 
+.life-date,
+.ordinal-indicator,
 .title-en {
   font-style: italic;
 }
 
+.life-date,
 .person-zh,
 .title-zh {
   white-space: nowrap;
