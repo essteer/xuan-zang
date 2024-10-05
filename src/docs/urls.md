@@ -12,11 +12,9 @@ A list of external URLs referenced throughout the site.
 | INK | LEAP | http://leapleapleap.com/ |
 | INK | Liu Cixin's Three Body Problem criticism | https://yibaochina.com/?p=249669 |
 | INK | Liu Dan bio | http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/ |
-<<<<<<< HEAD
 | INK | Resonate | https://www.resonatehk.com |
-=======
->>>>>>> main
 | INK | Sea Breeze Books | https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition |
+| INK | Unirule Institute of Economics | http://unirule.cloud/ |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
@@ -27,10 +25,7 @@ A list of external URLs referenced throughout the site.
 | VOICE | YiXi | https://www.yixi.tv |
 | SOURCES | Anki | https://apps.ankiweb.net/ |
 | SOURCES | Books.com.tw | https://www.books.com.tw/web/ovs |
-<<<<<<< HEAD
 | SOURCES | Fluent in 3 Months | https://www.fluentin3months.com/spaced-repetition/ |
-=======
->>>>>>> main
 | SOURCES | Foyles | https://www.foyles.co.uk/ |
 | SOURCES | Hacking Chinese | https://www.hackingchinese.com/ |
 | SOURCES | Haodoo | https://haodoo.net/ |
