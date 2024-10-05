@@ -14,6 +14,7 @@ A list of external URLs referenced throughout the site.
 | INK | Liu Dan bio | http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/ |
 | INK | Resonate | https://www.resonatehk.com |
 | INK | Sea Breeze Books | https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition |
+| INK | Unirule Institute of Economics | http://unirule.cloud/ |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
