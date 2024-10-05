@@ -16,7 +16,7 @@
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 55px;
+  bottom: 75px;
   right: 20px;
   
   display: none;
@@ -31,6 +31,12 @@
   font-size: 25px;
   line-height: 40px;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  #btn-back-to-top {
+    left: calc(50% + 355px);
+  }
 }
 
 body {
@@ -124,10 +130,6 @@ a {
 
 .main-anchor {
   text-decoration: none;
-}
-
-.return-link {
-  margin-top: var(--wide-margin);
 }
 
 .main-anchor:before {
@@ -305,7 +307,7 @@ ul.list {
 
   width: 100%;
   max-width: 365px;
-  height: 480px;
+  max-height: 480px;
 }
 
 .external-url {
@@ -318,10 +320,14 @@ ul.list {
   color: var(--highlight-colour);
 }
 
+.life-date,
+.ordinal-indicator,
+.quote,
 .title-en {
   font-style: italic;
 }
 
+.life-date,
 .person-zh,
 .title-zh {
   white-space: nowrap;
@@ -333,4 +339,11 @@ ul.list {
 .title-zh::after {
   content: "》";
   color: var(--highlight-colour);
+}
+
+.error-pages {
+  margin-top: 20vh;
+}
+.error-pages p {
+  text-align: center;
 }
