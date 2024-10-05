@@ -14,7 +14,7 @@
 
   <div class="container body-main-column">
     <!-- Book resources intro -->
-    <%- include("./content/get_books.html") %>
+    <%- include("./content/books.html") %>
       <% bookPaths.forEach(path=> { %>
         <%- include(path) %>
           <% }) %>
@@ -23,7 +23,7 @@
 
   <div class="container body-main-column">
     <!-- Podcast resources intro -->
-    <%- include("./content/get_podcasts.html") %>
+    <%- include("./content/podcasts.html") %>
       <% podcastPaths.forEach(path=> { %>
         <%- include(path) %>
           <% }) %>
@@ -32,7 +32,7 @@
 
   <div class="container body-main-column">
     <!-- Study tool resources intro -->
-    <%- include("./content/get_tools.html") %>
+    <%- include("./content/tools.html") %>
       <% toolPaths.forEach(path=> { %>
         <%- include(path) %>
           <% }) %>

@@ -110,6 +110,10 @@ h1 {
   padding-top: 65px;
 }
 
+#contents {
+  margin-bottom: var(--more-margin);
+}
+
 hr {
   margin-top: var(--more-margin);
   margin-bottom: var(--more-margin);
@@ -308,6 +312,14 @@ ul.list {
   width: 100%;
   max-width: 365px;
   max-height: 480px;
+}
+
+.text-points {
+  padding-left: 20px;
+}
+.text-points li {
+  text-align: left;
+  list-style-position: outside;
 }
 
 .external-url {
