@@ -16,7 +16,7 @@
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 55px;
+  bottom: 75px;
   right: 20px;
   
   display: none;
@@ -31,6 +31,12 @@
   font-size: 25px;
   line-height: 40px;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  #btn-back-to-top {
+    left: calc(50% + 355px);
+  }
 }
 
 body {
@@ -122,12 +128,12 @@ a {
   text-underline-offset: 2px;
 }
 
-.main-anchor {
-  text-decoration: none;
-}
-
 .return-link {
   margin-top: var(--wide-margin);
+}
+
+.main-anchor {
+  text-decoration: none;
 }
 
 .main-anchor:before {
@@ -333,4 +339,11 @@ ul.list {
 .title-zh::after {
   content: "》";
   color: var(--highlight-colour);
+}
+
+.error-pages {
+  margin-top: 20vh;
+}
+.error-pages p {
+  text-align: center;
 }

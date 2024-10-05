@@ -109,12 +109,12 @@ app.get('/works/:filename', (req, res) => {
   fs.access(markdownPath, fs.constants.F_OK, (err) => {
     if (err) {
       res.status(404);
-      res.render('utils/pagenotfound');
+      res.render('utils/status404');
     } else {
       fs.readFile(markdownPath, 'utf8', (err, data) => {
         if (err) {
           res.status(404);
-          res.render('utils/pagenotfound');
+          res.render('utils/status404');
         } else {
           const htmlContent = marked(data);
           res.render('works/misc/misc', { content: htmlContent });
@@ -136,11 +136,19 @@ app.get('/works/ink/moreink', (req, res) => {
   res.render('works/ink/pages/moreink');
 });
 
-// 404 error page route
+// Error page routes
 app.use((req, res, next) => {
   res.status(404);
-  res.render('utils/pagenotfound');
+  res.render('utils/status404');
 });
+app.use((req, res, next) => {
+  res.status(500);
+  res.render('utils/status500');
+})
+app.use((req, res, next) => {
+  res.status(503);
+  res.render('utils/status503');
+})
 
 // Localhost server
 app.listen(3000, () => {

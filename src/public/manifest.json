@@ -1,24 +1,23 @@
 {
-    "short_name": "Xuanzang",
-    "name": "Xuanzang: Chinese-language writers and podcasts",
-    "icons": [
-      {
-        "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685692747/xuanzang/xuanzang192_maskable_vibrwj.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "maskable"
-      },
-      {
-        "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685690111/xuanzang/xuanzang512_shynyy.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "id": "/",
-    "start_url": "/",
-    "background_color": "lch(8% 1.25 165)",
-    "display": "minimal-ui",
-    "scope": "/",
-    "theme_color": "lch(8% 1.25 165)",
-    "description": "Introductions to Chinese-language writers and podcasts, and where to find them."
-  }
+  "short_name": "Xuanzang",
+  "name": "Xuanzang: Notes on Sinophonia",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685692747/xuanzang/xuanzang192_maskable_vibrwj.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685690111/xuanzang/xuanzang512_shynyy.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "lch(8% 1.25 165)",
+  "display": "minimal-ui",
+  "theme_color": "lch(8% 1.25 165)"
+}
