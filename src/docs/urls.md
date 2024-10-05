@@ -5,6 +5,7 @@ A list of external URLs referenced throughout the site.
 | Section | Description | Link |
 | --- | --- | --- |
 | INK | China Heritage | https://chinaheritage.net/ |
+| INK | China Heritage - Why is Chinese So Boring? | https://chinaheritage.net/journal/why-is-chinese-so-boring/ |
 | INK | China Unofficial Archives | https://minjian-danganguan.org/ |
 | INK | Citizen Power Initiatives for China | https://www.citizenpowerforchina.org/ |
 | INK | Frank Delaney's Re-Joyce podcast | https://blog.frankdelaney.com/re-joyce/ |
@@ -15,6 +16,7 @@ A list of external URLs referenced throughout the site.
 | INK | Resonate | https://www.resonatehk.com |
 | INK | Sea Breeze Books | https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition |
 | INK | Unirule Institute of Economics | http://unirule.cloud/ |
+| INK | Wikipedia - Dunning-Kruger effect | https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
@@ -27,6 +29,7 @@ A list of external URLs referenced throughout the site.
 | SOURCES | Books.com.tw | https://www.books.com.tw/web/ovs |
 | SOURCES | Fluent in 3 Months | https://www.fluentin3months.com/spaced-repetition/ |
 | SOURCES | Foyles | https://www.foyles.co.uk/ |
+| SOURCES | Gwern - Spaced Repetition for Efficient Learning | https://gwern.net/spaced-repetition |
 | SOURCES | Hacking Chinese | https://www.hackingchinese.com/ |
 | SOURCES | Haodoo | https://haodoo.net/ |
 | SOURCES | HiNative | https://hinative.com/ |
