@@ -18,16 +18,16 @@
   position: fixed;
   bottom: 75px;
   right: 20px;
-  
+
   display: none;
   width: 40px;
   height: 40px;
   border: 0px;
   border-radius: 50%;
-  
+
   background-color: var(--navbar-bg-colour);
   color: var(--main-txt-colour);
-  
+
   font-size: 25px;
   line-height: 40px;
   text-align: center;
@@ -255,7 +255,7 @@ ul.list {
   margin: 0 auto;
 }
 
-.app-thumb img, 
+.app-thumb img,
 .app-thumb-wide img {
   margin-left: 0;
 }
@@ -304,7 +304,8 @@ ul.list {
   margin: 0;
 }
 
-.vertical-panel {
+.vertical-panel, 
+.vertical-panel-narrow {
   /* Column-display Chinese text */
   writing-mode: vertical-rl;
   overflow-x: auto;
@@ -312,6 +313,17 @@ ul.list {
   width: 100%;
   max-width: 365px;
   max-height: 480px;
+}
+
+.vertical-panel-narrow {
+  /* Additional settings for narrow vertical text-boxes */
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .text-points {
