@@ -142,6 +142,10 @@ app.use((req, res, next) => {
   res.render('utils/status404');
 });
 app.use((req, res, next) => {
+  res.status(429);
+  res.render('utils/status429');
+});
+app.use((req, res, next) => {
   res.status(500);
   res.render('utils/status500');
 })
