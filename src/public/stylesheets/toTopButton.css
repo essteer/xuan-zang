@@ -1,0 +1,26 @@
+#btn-back-to-top {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  border-radius: 50%;
+
+  background-color: var(--navbar-bg-colour);
+  color: var(--main-txt-colour);
+
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  #btn-back-to-top {
+    left: calc(50% + 355px);
+  }
+}
