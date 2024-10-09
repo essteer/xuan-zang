@@ -1,7 +1,15 @@
 <% layout("layouts/boilerplate") %>
   <article>
     <section>
-      <%- include("./print.html") %>
+      <%- include("./print/print.html") %>
+    </section>
+    <hr class="wide-top-margin" />
+    <section>
+      <%- include("./print/characters.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./print/direction.html") %>
     </section>
   </article>
   <button type="button" id="btn-back-to-top">

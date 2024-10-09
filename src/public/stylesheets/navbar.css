@@ -4,24 +4,21 @@
   --main-txt-color: lch(95% 5 82);
 }
 
-#navbar,
-footer {
+#navbar {
   width: 100%;
   background-color: var(--navbar-bg-colour);
   color: var(--main-txt-colour);
   font-family: "Oswald", sans-serif;
 }
 
-#navbar a,
-footer a {
+#navbar a {
   text-decoration: none;
   display: inline-block;
   position: relative;
   color: var(--main-txt-color);
 }
 
-#navbar a:before,
-footer a:before {
+#navbar a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -36,8 +33,7 @@ footer a:before {
   transition: all 0.4s ease-in-out 0s;
 }
 
-#navbar a:hover:before,
-footer a:hover:before {
+#navbar a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -132,34 +128,6 @@ footer a:hover:before {
 
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 1em;
-}
-
-footer {
-  text-align: center;
-  margin-top: auto;
-  padding: 1.5rem 0;
-
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.footer-link {
-  margin: 0 1.5rem;
-}
-
-.footer-margin {
-  min-height: 150px;
-}
-
-#csymbol {
-  padding: 3px;
 }
 
 @media screen and (min-width: 700px) {

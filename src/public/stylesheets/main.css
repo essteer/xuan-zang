@@ -49,6 +49,7 @@ main {
 article {
   width: 100%;
   max-width: 625px;
+  margin-bottom: 200px;
 }
 
 h1,
@@ -172,7 +173,6 @@ a {
   margin-top: var(--main-margin);
 }
 
-
 .contents-columns {
   /* Containers that can form multiple adjacent columns (newspaper-style) */
   column-count: 2;
@@ -233,8 +233,14 @@ ul.list {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
+  width: 100%;
   height: auto;
+}
+
+@media (min-width: 500px) {
+  img {
+    max-width: 85%;
+  }
 }
 
 .podcast {
@@ -314,14 +320,15 @@ img {
   margin-bottom: var(--half-margin);
 }
 
-.text-box-cn {
-  @media screen and (min-width: 500px) {
+@media (min-width: 500px) {
+  .text-box-cn {
     width: 80%;
     max-width: min(80%, 400px);
     margin: 0 auto;
   }
 }
 
+.text-box-cn,
 .text-box-center {
   margin-bottom: var(--more-margin);
 }
@@ -331,6 +338,11 @@ figcaption,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+figcaption {
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .text-indent {
@@ -412,7 +424,6 @@ figcaption,
 }
 
 .centered-list h3 {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
