@@ -172,6 +172,7 @@ a {
   margin-top: var(--main-margin);
 }
 
+
 .contents-columns {
   /* Containers that can form multiple adjacent columns (newspaper-style) */
   column-count: 2;
@@ -286,20 +287,13 @@ img {
 }
 
 .text-box {
-  margin-top: var(--more-margin);
-  margin-bottom: var(--more-margin);
-}
-
-.text-box,
-.caption {
   /* Global text-boxes and image captions */
   font-family: "Oswald", sans-serif;
-}
-
-.text-box,
-.caption {
   font-size: 1rem;
   text-align: center;
+
+  margin-top: var(--more-margin);
+  margin-bottom: var(--more-margin);
 }
 
 .text-box,
@@ -320,7 +314,6 @@ img {
   margin-bottom: var(--half-margin);
 }
 
-.caption,
 .text-box-cn {
   @media screen and (min-width: 500px) {
     width: 80%;
@@ -333,14 +326,11 @@ img {
   margin-bottom: var(--more-margin);
 }
 
+figcaption,
 .text-box-center {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.caption {
-  margin-top: var(--half-margin);
 }
 
 .text-indent {
@@ -419,4 +409,10 @@ img {
 }
 .error-pages p {
   text-align: center;
+}
+
+.centered-list h3 {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }

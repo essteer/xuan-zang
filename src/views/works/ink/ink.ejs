@@ -3,7 +3,7 @@
     <section>
       <%- include("./content/intro.html") %>
     </section>
-    <hr/>
+    <hr />
     <section class="wide-top-margin">
       <%- include("./content/essay.html") %>
     </section>
@@ -11,12 +11,12 @@
     <section class="wide-top-margin" id="contents">
       <%- include("./content/pagelinks.html") %>
     </section>
-    <hr/>
+    <hr />
     <section class="wide-top-margin">
       <% entryPaths.forEach(function(entryPath) { %>
         <!-- Dynamically load resources from "content/entries" -->
         <%- include(entryPath) %>
-          <hr class="wider-top-margin"/>
+          <hr class="wider-top-margin" />
           <% }); %>
     </section>
     <section class="wide-top-margin">
