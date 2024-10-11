@@ -2,28 +2,28 @@
   <article>
     <section>
       <%- include("./content/intro.html") %>
-        <hr />
     </section>
+    <hr />
     <section>
       <%- include("./content/pagelinks.html") %>
-        <hr />
     </section>
+    <hr />
     <section>
       <!-- Book resources intro -->
       <%- include("./content/books.html") %>
         <% bookPaths.forEach(path=> { %>
           <%- include(path) %>
             <% }) %>
-              <hr />
     </section>
+    <hr />
     <section>
       <!-- Podcast resources intro -->
       <%- include("./content/podcasts.html") %>
         <% podcastPaths.forEach(path=> { %>
           <%- include(path) %>
             <% }) %>
-              <hr />
     </section>
+    <hr />
     <section>
       <!-- Study tool resources intro -->
       <%- include("./content/tools.html") %>

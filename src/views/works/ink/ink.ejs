@@ -11,8 +11,8 @@
     <section class="wide-top-margin" id="contents">
       <%- include("./content/pagelinks.html") %>
     </section>
-    <hr />
-    <section class="wide-top-margin">
+    <hr class="wider-top-margin"/>
+    <section>
       <% entryPaths.forEach(function(entryPath) { %>
         <!-- Dynamically load resources from "content/entries" -->
         <%- include(entryPath) %>

@@ -168,9 +168,8 @@ a {
   padding: 0 0.5rem;
 }
 
-.index {
+ul li {
   text-align: start;
-  margin-top: var(--main-margin);
 }
 
 .contents-columns {
@@ -197,9 +196,10 @@ ul.list {
 }
 
 .list li {
+  text-align: center;
   margin-top: 5px;
-  padding-right: auto;
   margin-right: auto;
+  padding-right: auto;
 }
 
 .list a {
@@ -247,9 +247,8 @@ img {
   /* VOICE page images */
   max-width: 160px;
   max-height: 160px;
-  margin-top: var(--main-margin);
-  margin-bottom: var(--main-margin);
   margin: 0 auto;
+  margin-bottom: var(--more-margin);
 }
 .podcast-thumbs {
   display: flex;
@@ -257,6 +256,8 @@ img {
   flex-wrap: wrap;
   gap: var(--main-margin);
 }
+
+.podcast img,
 .podcast-thumb {
   flex: 0 0 auto;
 
@@ -347,7 +348,7 @@ figcaption {
 
 .text-indent {
   /* Chinese text boxes */
-  text-indent: 32px;
+  text-indent: 38px;
   margin: 0;
 }
 
@@ -365,14 +366,6 @@ figcaption {
 .vertical-panel-narrow {
   /* Additional settings for narrow vertical text-boxes */
   width: auto;
-}
-
-.text-points {
-  padding-left: 20px;
-}
-.text-points li {
-  text-align: left;
-  list-style-position: outside;
 }
 
 .inline-text {
@@ -427,3 +420,4 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
+ 
