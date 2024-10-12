@@ -230,6 +230,13 @@ ul.list {
   -webkit-transform: scaleX(1); /* Keep for legacy browsers */
 }
 
+@media (max-width: 400px) {
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -286,7 +293,6 @@ img {
   max-width: 180px;
 }
 
-
 .text-box {
   /* Global text-boxes and image captions */
   font-family: "Oswald", sans-serif;
@@ -310,21 +316,19 @@ img {
   color: var(--alt-txt-colour);
 }
 
+.text-box-cn p {
+  /* Chinese text boxes */
+  margin: 0;
+}
+
 .text-box-center p {
   margin-top: var(--half-margin);
   margin-bottom: var(--half-margin);
 }
 
-@media (min-width: 500px) {
-  .text-box-cn {
-    width: 80%;
-    max-width: min(80%, 400px);
-    margin: 0 auto;
-  }
-}
-
 .text-box-cn,
 .text-box-center {
+  margin: 0 auto;
   margin-bottom: var(--more-margin);
 }
 
@@ -340,12 +344,6 @@ figcaption {
   text-align: center;
 }
 
-.text-indent {
-  /* Chinese text boxes */
-  text-indent: 38px;
-  margin: 0;
-}
-
 .vertical-panel,
 .vertical-panel-narrow {
   /* Column-display Chinese text */
@@ -355,11 +353,21 @@ figcaption {
   width: 100%;
   max-width: 365px;
   max-height: 480px;
+
+  box-sizing: border-box;
 }
 
 .vertical-panel-narrow {
   /* Additional settings for narrow vertical text-boxes */
   width: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .vertical-panel {
+    width: calc(100vw - 20px);
+    max-width: 100vw;
+    margin: 0 auto;
+  }
 }
 
 .inline-text {
