@@ -1,11 +1,19 @@
 <% layout("layouts/boilerplate") %>
-  <!-- Back to top button -->
+  <article>
+    <section>
+      <%- include("./print/intro.html") %>
+    </section>
+    <hr class="wide-top-margin" />
+    <section>
+      <%- include("./print/characters.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./print/direction.html") %>
+    </section>
+  </article>
   <button type="button" id="btn-back-to-top">
+    <!-- Back to top button -->
     个
   </button>
-
-  <div class="container body-main-column">
-    <%- include("./print.html") %>
-  </div>
-
   <script src="/javascripts/toTopButton.js"></script>

@@ -19,8 +19,6 @@ I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introdu
 
 This is and was my first effort at developing a public-facing website, and makes use of standard HTML and CSS tools. A less common component is the use of Embedded JavaScript, a templating tool that enables JavaScript to be written directly into HTML. More recently I've experimented with rendering content from Markdown pages as well.
 
-The site previously relied heavily on Bootstrap, but over time this is being removed in favour of custom content. I tend to prefer to learn the fundamentals rather than rely on frameworks, but otherwise Bootstrap was a good entrypoint to creating the initial design.
-
 ## Contents
 
 - [Development](#development)
