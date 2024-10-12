@@ -262,7 +262,8 @@ img {
 .podcast img,
 .podcast-thumb img,
 .app-thumb img,
-.app-thumb-wide img {
+.app-thumb-wide img,
+.app-table-icon-cell img {
   border-radius: 7.5px;
 }
 
@@ -291,6 +292,46 @@ img {
 }
 .app-thumb-wide {
   max-width: 180px;
+}
+
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.app-table-icon-cell {
+  min-width: 85px;
+  width: 85px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.app-table-icon-cell img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-table td {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.app-table p {
+  margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .app-table,
+  .app-table tbody,
+  .app-table tr,
+  .app-table td {
+      display: block;
+  }
+
+  .app-table tr {
+    margin-bottom: 20px;
+  }
 }
 
 .text-box {
@@ -417,3 +458,4 @@ figcaption {
 .error-pages p {
   text-align: center;
 }
+

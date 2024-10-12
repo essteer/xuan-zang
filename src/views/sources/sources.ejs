@@ -9,23 +9,16 @@
     </section>
     <hr class="wider-top-margin" />
     <section>
-      <!-- Book resources intro -->
       <%- include("./content/books.html") %>
-        <% bookPaths.forEach(path=> { %>
-          <%- include(path) %>
-            <% }) %>
+        <%- include("./content/entries/book_links.html") %>
     </section>
     <hr class="wider-top-margin" />
     <section>
-      <!-- Podcast resources intro -->
       <%- include("./content/podcasts.html") %>
-        <% podcastPaths.forEach(path=> { %>
-          <%- include(path) %>
-            <% }) %>
+      <%- include("./content/entries/podcast_links.html") %>
     </section>
     <hr class="wider-top-margin" />
     <section>
-      <!-- Study tool resources intro -->
       <%- include("./content/tools.html") %>
         <% toolPaths.forEach(path=> { %>
           <%- include(path) %>
