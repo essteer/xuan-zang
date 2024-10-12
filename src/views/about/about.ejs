@@ -1,12 +1,15 @@
 <% layout("layouts/boilerplate") %>
-  <!-- Back to top button -->
+  <article>
+    <section>
+      <%- include("./content/about.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./content/name.html") %>
+    </section>
+  </article>
   <button type="button" id="btn-back-to-top">
+    <!-- Back to top button -->
     个
   </button>
-
-  <!-- Include the About content -->
-  <div class="container body-main-column">
-    <%- include("./about.html") %>
-  </div>
-
   <script src="/javascripts/toTopButton.js"></script>

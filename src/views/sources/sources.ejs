@@ -1,41 +1,32 @@
 <% layout("layouts/boilerplate") %>
-  <div class="container body-main-column">
-    <%- include("./content/intro.html") %>
-      <hr />
-  </div>
-  <div class="container body-main-column">
-    <%- include("./content/pagelinks.html") %>
-      <hr />
-  </div>
-  <!-- Back to top button -->
+  <article>
+    <section>
+      <%- include("./content/intro.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./content/pagelinks.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./content/books.html") %>
+        <%- include("./content/entries/book_links.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./content/podcasts.html") %>
+      <%- include("./content/entries/podcast_links.html") %>
+    </section>
+    <hr class="wider-top-margin" />
+    <section>
+      <%- include("./content/tools.html") %>
+        <% toolPaths.forEach(path=> { %>
+          <%- include(path) %>
+            <% }) %>
+    </section>
+  </article>
   <button type="button" id="btn-back-to-top">
+    <!-- Back to top button -->
     个
   </button>
-
-  <div class="container body-main-column">
-    <!-- Book resources intro -->
-    <%- include("./content/books.html") %>
-      <% bookPaths.forEach(path=> { %>
-        <%- include(path) %>
-          <% }) %>
-            <hr />
-  </div>
-
-  <div class="container body-main-column">
-    <!-- Podcast resources intro -->
-    <%- include("./content/podcasts.html") %>
-      <% podcastPaths.forEach(path=> { %>
-        <%- include(path) %>
-          <% }) %>
-            <hr />
-  </div>
-
-  <div class="container body-main-column">
-    <!-- Study tool resources intro -->
-    <%- include("./content/tools.html") %>
-      <% toolPaths.forEach(path=> { %>
-        <%- include(path) %>
-          <% }) %>
-  </div>
-
   <script src="/javascripts/toTopButton.js"></script>

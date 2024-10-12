@@ -61,13 +61,9 @@ app.get('/sources', (req, res) => {
     'entries'
   );
   // gathers resources from specific subdirectory
-  const bookPaths = gatherPaths(path.join(baseDir, 'books'));
-  const podcastPaths = gatherPaths(path.join(baseDir, 'podcasts'));
   const toolPaths = gatherPaths(path.join(baseDir, 'tools'));
 
   res.render('sources/sources', {
-    bookPaths: bookPaths,
-    podcastPaths: podcastPaths,
     toolPaths: toolPaths,
   });
 });

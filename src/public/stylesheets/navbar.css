@@ -1,11 +1,45 @@
 :root {
   --navbar-height: 64px;
-  --navbar-bg-color:  lch(13.12% 7.71 287.17);
+  --navbar-bg-color: lch(13.12% 7.71 287.17);
   --main-txt-color: lch(95% 5 82);
 }
 
 #navbar {
-  --navbar-height: 64px;
+  width: 100%;
+  background-color: var(--navbar-bg-colour);
+  color: var(--main-txt-colour);
+  font-family: "Oswald", sans-serif;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: var(--main-txt-color);
+}
+
+#navbar a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.25px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-txt-colour); /* Color of underline bar */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transform: scaleX(0); /* Keep for legacy browsers */
+  -webkit-transition: all 0.4s ease-in-out 0s; /* Keep for legacy browsers */
+}
+
+#navbar a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#navbar {
   position: fixed;
   height: var(--navbar-height);
   left: 0;
@@ -14,13 +48,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   z-index: 8000;
   transition: top 0.3s ease-in-out;
-}
-
-#navbar,
-footer {
-  background-color: var(--navbar-bg-colour);
-  color: var(--main-txt-colour);
-  font-family: "Oswald", sans-serif;
 }
 
 .navbar-container {
@@ -33,13 +60,13 @@ footer {
 
 .navbar-brand,
 .navbar-link {
-  text-decoration: none;
   display: flex;
   font-weight: 400;
   align-items: center;
 }
 
 .navbar-item {
+  text-align: center;
   justify-content: center;
   width: 100%;
   margin: 0.4em;
@@ -97,6 +124,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: var(--navbar-bg-color);
+  margin: 0;
 }
 
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
@@ -130,58 +158,8 @@ footer {
   }
 }
 
-#navbar a,
-footer a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  color: var(--main-txt-color);
-}
-
-#navbar a:before,
-footer a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1.25px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--main-txt-colour); /* Color of underline bar */
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-#navbar a:hover:before,
-footer a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-footer {
-  text-align: center;
-  margin-top: auto;
-  padding: 1.5rem 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
-}
-
-.footer-link {
-  margin: 0 1.5rem;
-}
-
-.footer-margin {
-  min-height: 150px;
-}
-
-#csymbol {
-  padding: 3px;
+@media screen and (max-width: 700px) {
+  .navbar-item {
+    width: 200px;
+  }
 }

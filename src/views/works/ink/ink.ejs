@@ -1,31 +1,30 @@
 <% layout("layouts/boilerplate") %>
-  <div class="container body-main-column">
-    <%- include("./content/intro.html") %>
-      <hr />
-  </div>
-  <div class="container body-main-column">
-    <%- include("./content/essay.html") %>
-      <hr />
-  </div>
-  <div class="container body-main-column">
-    <%- include("./content/pagelinks.html") %>
-      <hr />
-  </div>
-  <!-- Back to top button -->
+  <article>
+    <section>
+      <%- include("./content/intro.html") %>
+    </section>
+    <hr />
+    <section class="wide-top-margin">
+      <%- include("./content/essay.html") %>
+    </section>
+    <hr />
+    <section class="wide-top-margin" id="contents">
+      <%- include("./content/pagelinks.html") %>
+    </section>
+    <hr class="wider-top-margin"/>
+    <section>
+      <% entryPaths.forEach(function(entryPath) { %>
+        <!-- Dynamically load resources from "content/entries" -->
+        <%- include(entryPath) %>
+          <hr class="wider-top-margin" />
+          <% }); %>
+    </section>
+    <section class="wide-top-margin">
+      <%- include("./content/outro.html") %>
+    </section>
+  </article>
   <button type="button" id="btn-back-to-top">
+    <!-- Back to top button -->
     个
   </button>
-
-  <% entryPaths.forEach(function(entryPath) { %>
-    <!-- Dynamically load resources from "content/entries" -->
-    <div class="container body-main-column">
-      <%- include(entryPath) %>
-        <hr />
-    </div>
-    <% }); %>
-
-      <div class="container body-main-column">
-        <%- include("./content/outro.html") %>
-      </div>
-
-      <script src="/javascripts/toTopButton.js"></script>
+  <script src="/javascripts/toTopButton.js"></script>
