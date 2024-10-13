@@ -107,6 +107,7 @@ hr {
   margin-top: var(--wider-margin);
 }
 
+.h3-subheading,
 p {
   text-align: start;
   margin-top: 0;
@@ -187,6 +188,10 @@ ul li {
 }
 .contents-pagelinks {
   margin-top: var(--more-margin);
+}
+.contents-short-list {
+  font-size: 18pt;
+  margin-bottom: var(--main-margin);
 }
 
 ul.list {
