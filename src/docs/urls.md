@@ -4,8 +4,16 @@ A list of external URLs referenced throughout the site.
 
 | Section | Description | Link |
 | --- | --- | --- |
+| ABOUT | China Heritage | https://chinaheritage.net/ |
+| ABOUT | China Heritage - Why is Chinese So Boring? | https://chinaheritage.net/journal/why-is-chinese-so-boring/ |
+| ABOUT | essteer's GitHub | https://github.com/essteer/xuan-zang |
+| ABOUT | Frank Grießhammer's Source Serif | https://fonts.adobe.com/fonts/source-serif |
+| ABOUT | Gwern.net | https://gwern.net/ |
+| ABOUT | Vernon Adams' Oswald | https://fonts.google.com/specimen/Oswald |
+| ABOUT | Wikipedia - Cangjie | https://en.wikipedia.org/wiki/Cangjie |
+| ABOUT | Wikipedia - Dunning-Kruger effect | https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect |
+| ABOUT | Zheng Qingke's ZCOOL QingKe HuangYou | https://www.zcool.com.cn/work/ZMTg5MDEyMDQ=.html |
 | INK | China Heritage | https://chinaheritage.net/ |
-| INK | China Heritage - Why is Chinese So Boring? | https://chinaheritage.net/journal/why-is-chinese-so-boring/ |
 | INK | China Unofficial Archives | https://minjian-danganguan.org/ |
 | INK | Citizen Power Initiatives for China | https://www.citizenpowerforchina.org/ |
 | INK | Frank Delaney's Re-Joyce podcast | https://blog.frankdelaney.com/re-joyce/ |
@@ -16,7 +24,6 @@ A list of external URLs referenced throughout the site.
 | INK | Resonate | https://www.resonatehk.com |
 | INK | Sea Breeze Books | https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition |
 | INK | Unirule Institute of Economics | http://unirule.cloud/ |
-| INK | Wikipedia - Dunning-Kruger effect | https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
