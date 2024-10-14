@@ -13,17 +13,28 @@ A list of external URLs referenced throughout the site.
 | ABOUT | Wikipedia - Cangjie | https://en.wikipedia.org/wiki/Cangjie |
 | ABOUT | Wikipedia - Dunning-Kruger effect | https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect |
 | ABOUT | Zheng Qingke's ZCOOL QingKe HuangYou | https://www.zcool.com.cn/work/ZMTg5MDEyMDQ=.html |
+| INK | 5.12.2018 - Ai Weiwei's Blog Posts Related to the 5.12 Earthquake | https://www.5122018.com/ai-weiweis-blog-chinese |
+| INK | Ai Weiwei | https://www.aiweiwei.com/ |
+| INK | Ai Weiwei - Coronation | https://www.aiweiwei.com/coronation |
+| INK | Artnet - Lu Qing | https://www.artnet.com/artists/lu-qing/biography |
 | INK | China Heritage | https://chinaheritage.net/ |
 | INK | China Unofficial Archives | https://minjian-danganguan.org/ |
 | INK | Citizen Power Initiatives for China | https://www.citizenpowerforchina.org/ |
 | INK | Frank Delaney's Re-Joyce podcast | https://blog.frankdelaney.com/re-joyce/ |
+| INK | Guggenheim Bilbao - Ai Weiwei, Dropping a Han Dynasty Urn, 1995 | https://www.guggenheim-bilbao.eus/en/learn/schools/teachers-guides/ai-weiwei-dropping-han-dynasty-urn-1995 |
 | INK | Hao Jingfang's Folding Beijing | https://web.archive.org/web/20160822161228/http://jessica-hjf.blog.163.com/blog/static/278128102015240444791/ |
 | INK | LEAP | http://leapleapleap.com/ |
 | INK | Liu Cixin's Three Body Problem criticism | https://yibaochina.com/?p=249669 |
 | INK | Liu Dan bio | http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/ |
+| INK | New York Times - China’s Olympic Crossroads: Bird’s Nest Designer Ai Weiwei on Beijing’s ‘Pretend Smile’ | https://archive.nytimes.com/beijing2008.blogs.nytimes.com/2008/08/04/chinas-olympic-crossroads-birds-nest-designer-ai-weiwei-on-beijings-pretend-smile/ |
+| INK | Public Delivery - Ai Weiwei gives world his middle finger | https://publicdelivery.org/ai-weiwei-study-of-perspective/ |
 | INK | Resonate | https://www.resonatehk.com |
 | INK | Sea Breeze Books | https://www.seabreezebooks.com.sg/products/short-tongue-bilingual-edition |
+| INK | Tate - The Unilever Series: Ai Weiwei: Sunflower Seeds | https://www.tate.org.uk/whats-on/tate-modern/unilever-series/unilever-series-ai-weiwei-sunflower-seeds |
 | INK | Unirule Institute of Economics | http://unirule.cloud/ |
+| INK | Wikipedia - 2008 Sichuan earthquake | https://en.wikipedia.org/wiki/2008_Sichuan_earthquake |
+| INK | Wikipedia - Ai Qing | https://en.wikipedia.org/wiki/Ai_Qing |
+| INK | Wikipedia - Lu Qing | https://en.wikipedia.org/wiki/Lu_Qing |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
