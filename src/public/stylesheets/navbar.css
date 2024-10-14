@@ -1,14 +1,21 @@
 :root {
-  --navbar-height: 64px;
+  --navbar-height: 72px;
   --navbar-bg-color: lch(13.12% 7.71 287.17);
   --main-txt-color: lch(95% 5 82);
 }
 
 #navbar {
   width: 100%;
+  height: var(--navbar-height);
   background-color: var(--navbar-bg-colour);
   color: var(--main-txt-colour);
   font-family: "Oswald", sans-serif;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 8000;
 }
 
 #navbar a {
@@ -39,21 +46,10 @@
   transform: scaleX(1);
 }
 
-#navbar {
-  position: fixed;
-  height: var(--navbar-height);
-  left: 0;
-  right: 0;
-  top: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  z-index: 8000;
-  transition: top 0.3s ease-in-out;
-}
-
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  height: var(--navbar-height);
   align-items: center;
   padding: 0 1em;
 }
@@ -63,6 +59,7 @@
   display: flex;
   font-weight: 400;
   align-items: center;
+  z-index: 9010;
 }
 
 .navbar-item {
@@ -82,13 +79,14 @@
   height: 40px;
   display: flex;
   align-items: center;
+  margin-left: auto;
   justify-content: center;
   flex-direction: column;
   z-index: 9000;
 }
 
 .toggle-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   color: var(--main-txt-color);
 }
 
@@ -101,7 +99,6 @@
 }
 
 #navbar-menu {
-  position: fixed;
   top: var(--navbar-height);
   opacity: 1;
   visibility: hidden;
