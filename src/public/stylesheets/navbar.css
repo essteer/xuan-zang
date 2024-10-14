@@ -59,6 +59,7 @@
   display: flex;
   font-weight: 400;
   align-items: center;
+  z-index: 9010;
 }
 
 .navbar-item {
@@ -78,6 +79,7 @@
   height: 40px;
   display: flex;
   align-items: center;
+  margin-left: auto;
   justify-content: center;
   flex-direction: column;
   z-index: 9000;
@@ -97,7 +99,6 @@
 }
 
 #navbar-menu {
-  position: fixed;
   top: var(--navbar-height);
   opacity: 1;
   visibility: hidden;
