@@ -34,6 +34,7 @@ A list of external URLs referenced throughout the site.
 | INK | Unirule Institute of Economics | http://unirule.cloud/ |
 | INK | Wikipedia - 2008 Sichuan earthquake | https://en.wikipedia.org/wiki/2008_Sichuan_earthquake |
 | INK | Wikipedia - Ai Qing | https://en.wikipedia.org/wiki/Ai_Qing |
+| INK | Wikipedia - Bai Chongxi | https://en.wikipedia.org/wiki/Bai_Chongxi |
 | INK | Wikipedia - Lu Qing | https://en.wikipedia.org/wiki/Lu_Qing |
 | INK | Yibao | https://yibaochina.com/ |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
