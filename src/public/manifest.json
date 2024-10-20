@@ -1,15 +1,15 @@
 {
-  "short_name": "Xuanzang",
-  "name": "Xuanzang: Notes on Sinophonia",
+  "short_name": "Sinophonia",
+  "name": "Sinophonia: Chinese works and analysis",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685692747/xuanzang/xuanzang192_maskable_vibrwj.png",
+      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1729405096/sinophonia/pin_wb_192_evkxri.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1685690111/xuanzang/xuanzang512_shynyy.png",
+      "src": "https://res.cloudinary.com/duiqzld67/image/upload/v1729404840/sinophonia/pin_wb_512_xc7vdc.png",
       "sizes": "512x512",
       "type": "image/png"
     }

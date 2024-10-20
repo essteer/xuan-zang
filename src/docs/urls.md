@@ -6,7 +6,7 @@ A list of external URLs referenced throughout the site.
 | --- | --- | --- |
 | ABOUT | China Heritage | https://chinaheritage.net/ |
 | ABOUT | China Heritage - Why is Chinese So Boring? | https://chinaheritage.net/journal/why-is-chinese-so-boring/ |
-| ABOUT | essteer's GitHub | https://github.com/essteer/xuan-zang |
+| ABOUT | essteer's GitHub | https://github.com/essteer/sinophonia |
 | ABOUT | Frank Grießhammer's Source Serif | https://fonts.adobe.com/fonts/source-serif |
 | ABOUT | Gwern.net | https://gwern.net/ |
 | ABOUT | Vernon Adams' Oswald | https://fonts.google.com/specimen/Oswald |
@@ -43,7 +43,6 @@ A list of external URLs referenced throughout the site.
 | VOICE | JustPod | https://justpodmedia.com/ |
 | VOICE | New York Times article on Gushi FM | https://www.nytimes.com/2019/05/12/world/asia/china-podcast-gushi-fm.html |
 | VOICE | Stochastic Volatility | https://www.stovol.club |
-| VOICE | YiXi | https://www.yixi.tv |
 | SOURCES | Anki | https://apps.ankiweb.net/ |
 | SOURCES | Books.com.tw | https://www.books.com.tw/web/ovs |
 | SOURCES | Fluent in 3 Months | https://www.fluentin3months.com/spaced-repetition/ |
