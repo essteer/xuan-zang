@@ -6,8 +6,8 @@ A list of external URLs referenced throughout the site.
 | --- | --- | --- |
 | ABOUT | China Heritage | https://chinaheritage.net/ |
 | ABOUT | China Heritage - Why is Chinese So Boring? | https://chinaheritage.net/journal/why-is-chinese-so-boring/ |
-| ABOUT | essteer's GitHub | https://github.com/essteer/sinophonia |
 | ABOUT | Frank Grießhammer's Source Serif | https://fonts.adobe.com/fonts/source-serif |
+| ABOUT | GitHub - essteer | https://github.com/essteer/sinophonia |
 | ABOUT | Gwern.net | https://gwern.net/ |
 | ABOUT | Vernon Adams' Oswald | https://fonts.google.com/specimen/Oswald |
 | ABOUT | Wikipedia - Cangjie | https://en.wikipedia.org/wiki/Cangjie |
