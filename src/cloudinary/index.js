@@ -10,7 +10,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "xuanzang",
+    folder: "sinophonia",
     allowedFormats: ["jpeg", "png", "jpg"],
   },
 });

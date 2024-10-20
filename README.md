@@ -1,8 +1,8 @@
-<h1 align="center" id="title"><img src="./assets/xuanzang.png" width="386" height="80" style="border-radius: 5px;"></h1>
+<h1 align="center" id="title">SINOPHONIA 華品</h1>
 
 <p align="center">
-  <a href="https://www.xuan-zang.com/"><img src="https://img.shields.io/github/deployments/essteer/xuan-zang/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel"></a>
-  <a href="https://snyk.io/test/github/essteer/xuan-zang"><img src="https://snyk.io/test/github/essteer/xuan-zang/badge.svg?name=Snyk&style=flat&logo=Snyk"></a>
+  <a href="https://www.sinophonia.com/"><img src="https://img.shields.io/github/deployments/essteer/sinophonia/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel"></a>
+  <a href="https://snyk.io/test/github/essteer/sinophonia"><img src="https://snyk.io/test/github/essteer/sinophonia/badge.svg?name=Snyk&style=flat&logo=Snyk"></a>
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
   <a href="https://vercel.com"><img src="https://img.shields.io/badge/Vercel-000000.svg?style=flat&labelColor=555&logo=Vercel&logoColor=white"></a>
 </p>
 
-I built [`XUANZANG`](https://www.xuan-zang.com) as an ongoing project to introduce Chinese-language writers and podcasts, and share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
+I built Sinophonia as an ongoing project to introduce Chinese-language writing, recordings and other media, as well as to share information on where to find physical books, Chinese-supported podcast platforms, and related resources.
 
 This is and was my first effort at developing a public-facing website, and makes use of standard HTML and CSS tools. A less common component is the use of Embedded JavaScript, a templating tool that enables JavaScript to be written directly into HTML. More recently I've experimented with rendering content from Markdown pages as well.
 
@@ -36,18 +36,18 @@ This is and was my first effort at developing a public-facing website, and makes
 
 ### Installation
 
-[![Git](https://img.shields.io/badge/Git-F05032.svg?style=flat&labelColor=555&logo=Git&logoColor=white)](https://github.com/essteer/xuan-zang)
+[![Git](https://img.shields.io/badge/Git-F05032.svg?style=flat&labelColor=555&logo=Git&logoColor=white)](https://github.com/essteer/sinophonia)
 
 Clone the repo from GitHub:
 
 ```console
-$ git clone git@github.com:essteer/xuan-zang
+$ git clone git@github.com:essteer/sinophonia
 ```
 
 Navigate to the root directory and install the packages using `npm`:
 
 ```console
-$ cd xuan-zang
+$ cd sinophonia
 $ npm install
 ```
 
@@ -75,7 +75,7 @@ Serving on port 3000
 
 ## Deployment
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=flat&labelColor=555&logo=GitHub&logoColor=white)](https://github.com/essteer/xuan-zang)
+[![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=flat&labelColor=555&logo=GitHub&logoColor=white)](https://github.com/essteer/sinophonia)
 [![Vercel](https://img.shields.io/badge/Vercel-000000.svg?style=flat&labelColor=555&logo=Vercel&logoColor=white)](https://vercel.com)
 
 The website is deployed via [Vercel](https://vercel.com/) using a `CI/CD` workflow integrated with the GitHub repository.
@@ -100,7 +100,7 @@ The site uses [Google Fonts](https://fonts.google.com/) for title text (`Oswald`
 
 `ZCOOL QingKe HuangYou` is primarily designed for simplified Chinese character sets, though it contains traditional variants for most &mdash; but not all &mdash; characters.
 
-[`XUANZANG`](https://www.xuan-zang.com) makes use of traditional characters, most of which are featured in `ZCOOL QingKe HuangYou`. There are a small number of exceptions for which I have had to make use of simplified variants. This isn't ideal, but I love the design of the font and decided it is worth the trade-off. Purists please 諒解 - or better yet, release more fonts! There aren't enough creative designs for Chinese scripts.
+Sinophonia makes use of traditional characters, most of which are featured in `ZCOOL QingKe HuangYou`. There are a small number of exceptions for which I have had to make use of simplified variants. This isn't ideal, but I love the design of the font and decided it is worth the trade-off. Purists please 諒解 - or better yet, release more fonts! There aren't enough creative designs for Chinese scripts.
 
 #### Optimisation
 
@@ -118,7 +118,7 @@ To optimise use of web fonts, practices have been adopted from [CSS Wizardy](htt
 
 Images are hosted on [Cloudinary](https://cloudinary.com/), and include artworks, photographs, official logos and so on.
 
-Attributions are explicit and I have sought permission from owners to use their images &mdash; many have kindly granted this permission, but if you are the author of content here that you would like to be removed or amended, please contact me directly on [elliott@xuan-zang.com](elliott@xuan-zang.com).
+Attributions are explicit and I have sought permission from owners to use their images &mdash; many have kindly granted this permission, but if you are the author of content here that you would like to be removed or amended then contact me directly on [elliott@sinophonia.com](elliott@sinophonia.com).
 
 ### Vertical text
 
@@ -143,7 +143,7 @@ The key attributes used &mdash; ignoring colours and dimensions &mdash; are:
 }
 ```
 
-The end result is [here](https://www.xuan-zang.com/sources/print#text-direction) in the second text-box.
+The end result is [here](https://www.sinophonia.com/sources/print#text-direction) in the second text-box.
 
 I may revisit this another time or experiment with vertical rendering elsewhere.
 
