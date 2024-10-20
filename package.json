@@ -1,21 +1,21 @@
 {
-  "name": "xuan-zang",
+  "name": "sinophonia",
   "version": "1.0.0",
-  "description": "xuan-zang.com",
+  "description": "sinophonia.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/essteer/xuan-zang.git"
+    "url": "git+https://github.com/essteer/sinophonia.git"
   },
   "author": "essteer@pm.me",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/essteer/xuan-zang/issues"
+    "url": "https://github.com/essteer/sinophonia/issues"
   },
-  "homepage": "https://github.com/essteer/xuan-zang#readme",
+  "homepage": "https://github.com/essteer/sinophonia#readme",
   "dependencies": {
     "cloudinary": "^1.35.0",
     "dotenv": "^16.4.5",
