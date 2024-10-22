@@ -1,7 +1,7 @@
 <h1 align="center" id="title">SINOPHONIA 華品</h1>
 
 <p align="center">
-  <a href="https://www.sinophonia.com/"><img src="https://img.shields.io/github/deployments/essteer/sinophonia/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel"></a>
+  <a href="https://sinophonia.com/"><img src="https://img.shields.io/github/deployments/essteer/sinophonia/production?name=Vercel&?style=flat&logo=Vercel&label=Vercel"></a>
   <a href="https://snyk.io/test/github/essteer/sinophonia"><img src="https://snyk.io/test/github/essteer/sinophonia/badge.svg?name=Snyk&style=flat&logo=Snyk"></a>
 </p>
 
@@ -143,7 +143,7 @@ The key attributes used &mdash; ignoring colours and dimensions &mdash; are:
 }
 ```
 
-The end result is [here](https://www.sinophonia.com/sources/print#text-direction) in the second text-box.
+The end result is [here](https://sinophonia.com/sources/print#text-direction) in the second text-box.
 
 I may revisit this another time or experiment with vertical rendering elsewhere.
 

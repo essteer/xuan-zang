@@ -217,7 +217,7 @@ ul.list {
   position: absolute;
   width: 100%;
   height: 0.5px;
-  bottom: 3px;
+  bottom: 5px;
   left: 0;
   background-color: var(--main-txt-colour);
   visibility: hidden;
@@ -228,7 +228,7 @@ ul.list {
 }
 
 .list a:hover:before {
-  bottom: 3px;
+  bottom: 5px;
   visibility: visible;
   transform: scaleX(1);
   -webkit-transform: scaleX(1); /* Keep for legacy browsers */
@@ -424,13 +424,21 @@ figcaption {
   align-items: center;
 }
 
+.internal-url,
 .external-url {
-  /* Global external URL links */
+  /* Global URL links */
   text-decoration-color: var(--highlight-colour);
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
 .external-url:hover {
+  color: var(--highlight-colour);
+}
+.internal-url {
+  text-decoration-style: dotted;
+  color: var(--main-txt-colour);
+}
+.internal-url:hover {
   color: var(--highlight-colour);
 }
 

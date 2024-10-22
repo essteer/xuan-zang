@@ -10,8 +10,9 @@ A list of external URLs referenced throughout the site.
 | ABOUT | GitHub - essteer | https://github.com/essteer/sinophonia |
 | ABOUT | Gwern.net | https://gwern.net/ |
 | ABOUT | Vernon Adams' Oswald | https://fonts.google.com/specimen/Oswald |
+| ABOUT | Wang Keping | https://www.wangkeping.com/ |
 | ABOUT | Wikipedia - Cangjie | https://en.wikipedia.org/wiki/Cangjie |
-| ABOUT | Wikipedia - Dunning-Kruger effect | https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect |
+| ABOUT | Wikipedia - Liu Heung Shing | https://en.wikipedia.org/wiki/Liu_Heung_Shing |
 | ABOUT | Zheng Qingke's ZCOOL QingKe HuangYou | https://www.zcool.com.cn/work/ZMTg5MDEyMDQ=.html |
 | INK | 5.12.2018 - Ai Weiwei's Blog Posts Related to the 5.12 Earthquake | https://www.5122018.com/ai-weiweis-blog-chinese |
 | INK | Ai Weiwei | https://www.aiweiwei.com/ |
