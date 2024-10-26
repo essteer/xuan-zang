@@ -27,6 +27,7 @@ A list of external URLs referenced throughout the site.
 | INK | LEAP | http://leapleapleap.com/ |
 | INK | Liu Cixin's Three Body Problem criticism | https://yibaochina.com/?p=249669 |
 | INK | Liu Dan bio | http://www.asiaartcenter.org/asia/portfolio/%E5%8A%89%E4%B8%B9/ |
+| INK | National Taiwan University - 臺灣現代主義小說 | https://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/101S106 |
 | INK | New York Times - China’s Olympic Crossroads: Bird’s Nest Designer Ai Weiwei on Beijing’s ‘Pretend Smile’ | https://archive.nytimes.com/beijing2008.blogs.nytimes.com/2008/08/04/chinas-olympic-crossroads-birds-nest-designer-ai-weiwei-on-beijings-pretend-smile/ |
 | INK | Public Delivery - Ai Weiwei gives world his middle finger | https://publicdelivery.org/ai-weiwei-study-of-perspective/ |
 | INK | Resonate | https://www.resonatehk.com |
@@ -38,6 +39,8 @@ A list of external URLs referenced throughout the site.
 | INK | Wikipedia - Bai Chongxi | https://en.wikipedia.org/wiki/Bai_Chongxi |
 | INK | Wikipedia - Lu Qing | https://en.wikipedia.org/wiki/Lu_Qing |
 | INK | Yibao | https://yibaochina.com/ |
+| INK | YouTube - 臺灣現代主義小説 06. 白先勇＜遊園驚夢＞（一） |  https://www.youtube.com/watch?v=mpxSWqRcepc&list=PLCX-BLZ1hDpBj5-_xVy08yCRlnS1h379-&index=6 |
+| INK | YouTube - 臺灣現代主義小説 07. 白先勇＜遊園驚夢＞（二） | https://www.youtube.com/watch?v=mpxSWqRcepc&list=PLCX-BLZ1hDpBj5-_xVy08yCRlnS1h379-&index=7 |
 | VOICE | Bumingbai podcast | https://www.bumingbai.net/ |
 | VOICE | Chiang Hsun's Mei De Chen Si podcast | https://open.firstory.me/user/cktxxrlw27ioo0898okcvd43b |
 | VOICE | Frank Delaney's Re-Joyce podcast | https://blog.frankdelaney.com/re-joyce/ |
