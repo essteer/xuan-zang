@@ -188,10 +188,6 @@ ul li {
 .contents-pagelinks {
   margin-top: var(--more-margin);
 }
-.contents-short-list {
-  font-size: 18pt;
-  margin-bottom: var(--main-margin);
-}
 
 ul.list {
   list-style-type: none;
