@@ -68,7 +68,17 @@ app.get('/sources', (req, res) => {
   });
 });
 
-app.get('/works/ink', function (req, res) {
+app.get('/sources/print', (req, res) => {
+  const subroute = req.params.subroute;
+  const stub = req.params.stub;
+  res.render('sources/pages/print');
+});
+
+app.get('/works/ink', (req, res) => {
+  res.redirect('/ink'); // maintain for backwards compatibility
+});
+
+app.get('/ink', function (req, res) {
   const entriesDir = path.join(
     __dirname, // walks through 'content/entries' dir to render content
     'views',
@@ -81,7 +91,21 @@ app.get('/works/ink', function (req, res) {
   res.render('works/ink/ink', { entryPaths: entryPaths });
 });
 
+app.get('/works/ink/moreink', (req, res) => {
+  res.redirect('/ink/moreink'); // maintain for backwards compatibility
+});
+
+app.get('/ink/moreink', (req, res) => {
+  const subroute = req.params.subroute;
+  const stub = req.params.stub;
+  res.render('works/ink/pages/moreink');
+});
+
 app.get('/works/voice', (req, res) => {
+  res.redirect('/voice'); // maintain for backwards compatibility
+});
+
+app.get('/voice', (req, res) => {
   const entriesDir = path.join(
     // walks through 'content/entries' dir to render content
     __dirname,
@@ -118,18 +142,6 @@ app.get('/works/:filename', (req, res) => {
       });
     }
   });
-});
-
-// Routes to article stubs
-app.get('/sources/print', (req, res) => {
-  const subroute = req.params.subroute;
-  const stub = req.params.stub;
-  res.render('sources/pages/print');
-});
-app.get('/works/ink/moreink', (req, res) => {
-  const subroute = req.params.subroute;
-  const stub = req.params.stub;
-  res.render('works/ink/pages/moreink');
 });
 
 // Error page routes
