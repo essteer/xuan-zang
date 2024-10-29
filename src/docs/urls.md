@@ -14,6 +14,7 @@ A list of external URLs referenced throughout the site.
 | ABOUT | Wikipedia - Cangjie | https://en.wikipedia.org/wiki/Cangjie |
 | ABOUT | Wikipedia - Liu Heung Shing | https://en.wikipedia.org/wiki/Liu_Heung_Shing |
 | ABOUT | Zheng Qingke's ZCOOL QingKe HuangYou | https://www.zcool.com.cn/work/ZMTg5MDEyMDQ=.html |
+| CHANGELOG | GitHub - essteer | https://github.com/essteer/sinophonia |
 | INK | 5.12.2018 - Ai Weiwei's Blog Posts Related to the 5.12 Earthquake | https://www.5122018.com/ai-weiweis-blog-chinese |
 | INK | Ai Weiwei | https://www.aiweiwei.com/ |
 | INK | Ai Weiwei - Coronation | https://www.aiweiwei.com/coronation |
