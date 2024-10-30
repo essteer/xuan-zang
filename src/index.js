@@ -134,11 +134,11 @@ app.get("/changelog", (req, res) => {
 });
 
 // Permitted Markdown pages exist in this directory
-const pagesDirectory = path.join(__dirname, "views", "works", "misc", "pages");
+const miscDirectory = path.join(__dirname, "views", "misc");
 // Markdown to HTML rendering for entire pages
-app.get("/works/:filename", (req, res) => {
+app.get("/:filename", (req, res) => {
   const filename = req.params.filename;
-  const markdownPath = path.join(pagesDirectory, `${filename}.md`);
+  const markdownPath = path.join(miscDirectory, `${filename}.md`);
 
   fs.access(markdownPath, fs.constants.F_OK, (err) => {
     if (err) {
@@ -151,7 +151,7 @@ app.get("/works/:filename", (req, res) => {
           res.render("utils/status404");
         } else {
           const htmlContent = marked(data);
-          res.render("works/misc/misc", { content: htmlContent });
+          res.render("layouts/boilerplate", { body: htmlContent });
         }
       });
     }

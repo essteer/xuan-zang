@@ -1,7 +1,7 @@
 <article>
 <h1>CHANGELOG&nbsp;<span class="chinese-heading">變更日志</span></h1>
 
-This is a log to track significant changes in the <a href="/about#design" class="internal-url">design</a> or implementation of <a href="/" class="internal-url">sinophonia.com</a>, and additions or revisions to the written content.
+This is a log to track significant <a href="/about#design" class="internal-url">design</a> or implementation changes to <a href="/" class="internal-url">sinophonia.com</a>, and additions or revisions to the written content.
 
 The full <a href="https://github.com/essteer/sinophonia" class="external-url">commit history</a> is on the site repository.
 
