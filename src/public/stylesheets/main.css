@@ -51,6 +51,9 @@ article {
   max-width: 625px;
   margin-bottom: 200px;
 }
+.article-narrow {
+  max-width: 500px;
+}
 
 h1,
 h2,

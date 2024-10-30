@@ -143,7 +143,7 @@ The key attributes used &mdash; ignoring colours and dimensions &mdash; are:
 }
 ```
 
-The end result is [here](https://sinophonia.com/sources/print#text-direction) in the second text-box.
+The end result is [here](https://sinophonia.com/typography#text-direction) in the second text-box.
 
 I may revisit this another time or experiment with vertical rendering elsewhere.
 
