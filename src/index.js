@@ -68,12 +68,6 @@ app.get("/sources", (req, res) => {
   });
 });
 
-app.get("/sources/print", (req, res) => {
-  const subroute = req.params.subroute;
-  const stub = req.params.stub;
-  res.render("sources/pages/print");
-});
-
 app.get("/works/ink", (req, res) => {
   res.redirect("/ink"); // maintain for backwards compatibility
 });
